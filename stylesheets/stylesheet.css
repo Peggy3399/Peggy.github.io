@@ -459,18 +459,28 @@ header h1 {
   width: 540px;
   margin-top: 0;
   margin-bottom: 0.2em;
-  font-size: 72px;
+  font-size: 40px;
   font-weight: normal;
   line-height: 1;
   color: #fff;
   letter-spacing: -1px;
+  animation: title 1s;
+  -webkit-animation: title 1s;
+}
+@keyframes title{
+  from {transform:translateY(-100px)}
+  to {transform:translateY(0)}
+}
+@-webkit-keyframes title{
+  from {transform:translateY(-100px)}
+  to {transform:translateY(0)}
 }
 
 header h2 {
   width: 540px;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: normal;
   line-height: 1.3;
   color: #9ddcff;
@@ -526,6 +536,7 @@ a.button {
   line-height: 1.2;
   color: #fff;
 }
+
 a.button small {
   display: block;
   font-size: 11px;
@@ -785,10 +796,10 @@ footer a:hover {
     width: 340px;
   }
   header h1 {
-    font-size: 60px;
+    font-size: 40px;
   }
   header h2 {
-    font-size: 30px;
+    font-size: 24px;
   }
   #main-content {
     width: 490px;
@@ -820,7 +831,7 @@ footer a:hover {
     width: 100%;
   }
   header h1 {
-    font-size: 48px;
+    font-size: 40px;
   }
   header h2 {
     font-size: 24px;
