@@ -81,16 +81,17 @@
 
 
 
-<meta name="description" content="不要忘记做自己的太阳">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Peegy&#39;s Blog">
-<meta property="og:url" content="https://peggy3399.github.io/index.html">
+<meta name="description" content="导入文件 sass的导入(@import)规则和CSS的有所不同，编译时会将@import的scss文件合并进来只生成一个CSS文件。但是如果你在sass文件中导入css文件如@import ‘reset.css’，那效果跟普通CSS导入样式文件一样， 文件中，而是以@import方式存在。 所有的sass导入文件都可以忽略后缀名.scss。一般来说基础的文件命名方法以_开头，如_mixin.sc">
+<meta property="og:type" content="article">
+<meta property="og:title" content="sass语法">
+<meta property="og:url" content="https://peggy3399.github.io/2017/11/13/sass语法/index.html">
 <meta property="og:site_name" content="Peegy&#39;s Blog">
-<meta property="og:description" content="不要忘记做自己的太阳">
+<meta property="og:description" content="导入文件 sass的导入(@import)规则和CSS的有所不同，编译时会将@import的scss文件合并进来只生成一个CSS文件。但是如果你在sass文件中导入css文件如@import ‘reset.css’，那效果跟普通CSS导入样式文件一样， 文件中，而是以@import方式存在。 所有的sass导入文件都可以忽略后缀名.scss。一般来说基础的文件命名方法以_开头，如_mixin.sc">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-11-13T08:28:08.757Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Peegy&#39;s Blog">
-<meta name="twitter:description" content="不要忘记做自己的太阳">
+<meta name="twitter:title" content="sass语法">
+<meta name="twitter:description" content="导入文件 sass的导入(@import)规则和CSS的有所不同，编译时会将@import的scss文件合并进来只生成一个CSS文件。但是如果你在sass文件中导入css文件如@import ‘reset.css’，那效果跟普通CSS导入样式文件一样， 文件中，而是以@import方式存在。 所有的sass导入文件都可以忽略后缀名.scss。一般来说基础的文件命名方法以_开头，如_mixin.sc">
 
 
 
@@ -120,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="https://peggy3399.github.io/"/>
+  <link rel="canonical" href="https://peggy3399.github.io/2017/11/13/sass语法/"/>
 
 
 
 
 
-  <title>Peegy's Blog</title>
+  <title>sass语法 | Peegy's Blog</title>
   
 
 
@@ -145,8 +146,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -229,9 +229,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -261,9 +261,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/13/sass语法/" itemprop="url">sass语法</a></h1>
+          <h1 class="post-title" itemprop="name headline">sass语法</h1>
         
 
         <div class="post-meta">
@@ -313,9 +311,7 @@
       
 
       
-        
-          
-            <h4 id="导入文件"><a href="#导入文件" class="headerlink" title="导入文件"></a>导入文件</h4><p> <a href="http://www.w3cplus.com/sassguide/syntax.html" target="_blank" rel="external">sass</a>的导入(@import)规则和CSS的有所不同，编译时会将@import的scss文件合并进来只生成一个CSS文件。但是如果你在sass文件中导入css文件如@import ‘reset.css’，那效果跟普通CSS导入样式文件一样， 文件中，而是以@import方式存在。<br> 所有的sass导入文件都可以忽略后缀名.scss。一般来说基础的文件命名方法以_开头，如_mixin.scss。这种文件在导入的时候可以不写下划线，可写成@import “mixin”。</p>
+        <h4 id="导入文件"><a href="#导入文件" class="headerlink" title="导入文件"></a>导入文件</h4><p> <a href="http://www.w3cplus.com/sassguide/syntax.html" target="_blank" rel="external">sass</a>的导入(@import)规则和CSS的有所不同，编译时会将@import的scss文件合并进来只生成一个CSS文件。但是如果你在sass文件中导入css文件如@import ‘reset.css’，那效果跟普通CSS导入样式文件一样， 文件中，而是以@import方式存在。<br> 所有的sass导入文件都可以忽略后缀名.scss。一般来说基础的文件命名方法以_开头，如_mixin.scss。这种文件在导入的时候可以不写下划线，可写成@import “mixin”。</p>
 <h4 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h4><ul>
 <li>// ….. 单行注释不会输入到CSS中</li>
 <li>/<em> ….. </em>/ 标准注释会编译到css中</li>
@@ -358,8 +354,6 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">//单个选择器跳出</span><br><span class="line">.parent-2 &#123;</span><br><span class="line">  color:#f00;</span><br><span class="line">  @at-root .child &#123;</span><br><span class="line">    width:200px;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//多个选择器跳出</span><br><span class="line">.parent-3 &#123;</span><br><span class="line">  background:#f00;</span><br><span class="line">  @at-root &#123;</span><br><span class="line">    .child1 &#123;</span><br><span class="line">      width:300px;</span><br><span class="line">    &#125;</span><br><span class="line">    .child2 &#123;</span><br><span class="line">      width:400px;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>@at-root与&amp;配合使用</p>
 
-          
-        
       
     </div>
     
@@ -376,132 +370,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://peggy3399.github.io/2017/11/13/关闭占用端口/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Peggy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar/1.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Peegy's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/13/关闭占用端口/" itemprop="url">关闭占用端口</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-13T16:27:07+08:00">
-                2017-11-13
-              </time>
+              <a href="/2017/11/13/关闭占用端口/" rel="next" title="关闭占用端口">
+                <i class="fa fa-chevron-left"></i> 关闭占用端口
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>命令：netstat -ano—–列出所有端口的情况<br>命令：netstat -aon|findstr “49157”——-查看被占用端口对应的PID<br>命令：tasklist|findstr “2720”——查看是哪个进程或者程序占用了2720<br>命令：taskkill /f /t /im Tencentdl.exe——结束该进程<br>      taskkill/pid PID号 /F</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -511,275 +401,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://peggy3399.github.io/2017/11/13/git操作/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Peggy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar/1.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Peegy's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/13/git操作/" itemprop="url">git操作</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-13T15:03:14+08:00">
-                2017-11-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h4 id="第一次提交本地代码到远程分支"><a href="#第一次提交本地代码到远程分支" class="headerlink" title="第一次提交本地代码到远程分支"></a>第一次提交本地代码到远程分支</h4><ul>
-<li>git init</li>
-<li>git remote add origin https://… .git</li>
-<li>git pull origin master –allow-unrelated-histories</li>
-<li>git add .</li>
-<li>git commit -m ‘解释说明文字’</li>
-<li>git push oriign master</li>
-</ul>
-<blockquote>
-<p>出现的问题fatal: refusing to merge unrelated histories<br>解决问题：git pull origin master –allow-unrelated-histories</p>
-</blockquote>
-<h4 id="创建本地分支提交到远程"><a href="#创建本地分支提交到远程" class="headerlink" title="创建本地分支提交到远程"></a>创建本地分支提交到远程</h4><ul>
-<li>git branch dev</li>
-<li>git checkout dev</li>
-<li>git add .</li>
-<li>git commit -m ‘解释说明文字’</li>
-<li>git push oriign dev</li>
-</ul>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://peggy3399.github.io/2017/11/13/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Peggy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar/1.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Peegy's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/13/hello-world/" itemprop="url">Hello Everybody</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-13T14:52:33+08:00">
-                2017-11-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>今天，我创建了自己的微博，很开心跟大家分享！</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -787,6 +413,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -807,8 +437,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -872,6 +511,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#导入文件"><span class="nav-number">1.</span> <span class="nav-text">导入文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注释"><span class="nav-number">2.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#变量"><span class="nav-number">3.</span> <span class="nav-text">变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#嵌套"><span class="nav-number">4.</span> <span class="nav-text">嵌套</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1012,6 +667,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
