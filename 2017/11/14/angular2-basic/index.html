@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://peggy3399.github.io">
-  <title>Tag: git | Peegy&#39;s Blog</title>
+  <title>Angular2-basic | Peegy&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="不要忘记做自己的太阳">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Peegy&#39;s Blog">
-<meta property="og:url" content="https://peggy3399.github.io/tags/git/index.html">
+  <meta name="description" content="内置指令Angular2 指令是构成Angular2应用程序的重要组成部分，指令主要用来对模板的标签或者元素附加一些新的特性或者功能，改变一个 DOM 元素的外观或行为，主要存在两种类型的指令：  结构型指令：会通过添加 / 删除 DOM 元素来更改 DOM 树布局 属性型指令：指令改变一个元素的外观或行为。">
+<meta name="keywords" content="基础,指令,语法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Angular2-basic">
+<meta property="og:url" content="https://peggy3399.github.io/2017/11/14/angular2-basic/index.html">
 <meta property="og:site_name" content="Peegy&#39;s Blog">
-<meta property="og:description" content="不要忘记做自己的太阳">
+<meta property="og:description" content="内置指令Angular2 指令是构成Angular2应用程序的重要组成部分，指令主要用来对模板的标签或者元素附加一些新的特性或者功能，改变一个 DOM 元素的外观或行为，主要存在两种类型的指令：  结构型指令：会通过添加 / 删除 DOM 元素来更改 DOM 树布局 属性型指令：指令改变一个元素的外观或行为。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-11-14T06:36:42.099Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Peegy&#39;s Blog">
-<meta name="twitter:description" content="不要忘记做自己的太阳">
+<meta name="twitter:title" content="Angular2-basic">
+<meta name="twitter:description" content="内置指令Angular2 指令是构成Angular2应用程序的重要组成部分，指令主要用来对模板的标签或者元素附加一些新的特性或者功能，改变一个 DOM 元素的外观或行为，主要存在两种类型的指令：  结构型指令：会通过添加 / 删除 DOM 元素来更改 DOM 树布局 属性型指令：指令改变一个元素的外观或行为。">
   
     <link rel="alternative" href="/atom.xml" title="Peegy&#39;s Blog" type="application/atom+xml">
   
@@ -137,60 +139,257 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-angular2-basic" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/13/git操作/" class="archive-article-date">
-  	<time datetime="2017-11-13T07:03:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-13</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/13/git操作/">git操作</a>
+    <h1 class="article-title" itemprop="name">
+      Angular2-basic
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/11/14/angular2-basic/" class="archive-article-date">
+  	<time datetime="2017-11-14T03:47:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="内置指令"><a href="#内置指令" class="headerlink" title="内置指令"></a>内置指令</h4><p>Angular2 指令是构成Angular2应用程序的重要组成部分，指令主要用来对模板的标签或者元素附加一些新的特性或者功能，改变一个 DOM 元素的外观或行为，主要存在两种类型的指令：</p>
+<ul>
+<li>结构型指令：会通过添加 / 删除 DOM 元素来更改 DOM 树布局</li>
+<li>属性型指令：指令改变一个元素的外观或行为。</li>
+</ul>
+<a id="more"></a>
+<h5 id="NgStyle"><a href="#NgStyle" class="headerlink" title="NgStyle"></a>NgStyle</h5><p>NgStyle 指令，可以通过angular表达式为DOM元素设置一个CSS属性。NgStyle真正厉害之处是可以使用动态值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &lt;input type=&quot;text&quot; name=&quot;color&quot; #colorinput&gt;</span><br><span class="line">    &lt;input type=&quot;text&quot; name=&quot;fontSize&quot; #fontinput&gt;</span><br><span class="line">    &lt;button (click)=&quot;apply(colorinput.value, fontinput.value)&quot;&gt; apply &lt;/button&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;div&gt;</span><br><span class="line">    &lt;span [ngStyle]=&quot;&#123;color: colorinput.value, &apos;background-color&apos;: &apos;blue&apos;&#125;&quot; [style.font-size.px]=&quot;fontSize&quot;&gt;color :&#123;&#123; colorinput.value &#125;&#125; font: &#123;&#123;fontinput.value&#125;&#125;&lt;/span&gt;</span><br><span class="line">    &lt;p [ngStyle]=&quot;style()&quot;&gt;hello hello hello&lt;/p&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="NgIf"><a href="#NgIf" class="headerlink" title="NgIf"></a>NgIf</h5><p>ngIf指令是用于当你想要通过某个条件显示或者隐藏一个元素时，条件是由你传递给该指令的表达式结果来确定的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div *ngIf=&quot;false&quot;&gt;&lt;/div&gt; &lt;!-- never displayed --&gt;</span><br><span class="line">&lt;div *ngIf=&quot;a &gt; b&quot;&gt;&lt;/div&gt; &lt;!-- displayed if a is more than b --&gt;</span><br><span class="line">&lt;div *ngIf=&quot;str === &apos;yes&apos;&quot;&gt;&lt;/div&gt; &lt;!-- displayed if str holds the string &quot;yes&quot; --&gt;</span><br><span class="line">&lt;div *ngIf=&quot;myFunc()&quot;&gt;&lt;/div&gt; &lt;!-- displayed if myFunc returns a true value --&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Angular2 没有提供内置的ng-show，如果你的目标只是改变一个元素的css，你可以考虑使用ngStyle或class指令。只是用[hidden]属性，没有[show]属性。</p>
+</blockquote>
+<h5 id="NgClass"><a href="#NgClass" class="headerlink" title="NgClass"></a>NgClass</h5><p>NgClass指令，在你的HTML模板通过ngClass属性表示，允许您为一个给定的DOM元素动态地设置和改变CSS类。</p>
+<ul>
+<li>使用方式是通过对象字符串，对象用key作为类名称，value应该是一个true/false值，以指示该类是否应该应用。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div [ngClass]=&quot;&#123;bordered: false&#125;&quot;&gt;This is never bordered&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>在组件中声明一个数组变量</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">this.classList = [&apos;blue&apos;, &apos;round&apos;];</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;base&quot; [ngClass]=&quot;classList&quot;&gt;</span><br><span class="line">  This is &#123;&#123; classList.indexOf(&apos;blue&apos;) &gt; -1 ? &quot;&quot; : &quot;NOT&quot; &#125;&#125; blue and &#123;&#123; classList.indexOf(&apos;round&apos;) &gt; -1 ? &quot;&quot; : &quot;NOT&quot; &#125;&#125; round</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>通过对象数组</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div [ngClass]=&quot;&#123;true:&apos;change1&apos;,false:&apos;change2&apos;&#125;[className]&quot;&gt;This is Angular1&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div [class.change1]=&quot;className&quot;&gt;This is Angular2&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>通过key/value</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div [ngClass]=&quot;&#123;&apos;change1&apos;:select1,&apos;change2&apos;:select2,&apos;change3&apos;:select3&#125;&quot;&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div [ngClass]=&quot;&#123;&apos;change1&apos;:(className == &apos;select1&apos;)&#125;&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="ngSwitch"><a href="#ngSwitch" class="headerlink" title="ngSwitch"></a>ngSwitch</h5><p>NgSwitch指令可以应用在任何HTML元素上，它评估元素的ngSwitch属性值，并根据这个值 决定应用哪些template的内容。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul [ngSwitch]=&quot;choice&quot;&gt;</span><br><span class="line">    &lt;li *ngSwitchCase=&quot;1&quot;&gt;First choice&lt;/li&gt;</span><br><span class="line">    &lt;li *ngSwitchCase=&quot;2&quot;&gt;Second choice&lt;/li&gt;</span><br><span class="line">    &lt;li *ngSwitchCase=&quot;3&quot;&gt;Third choice&lt;/li&gt;</span><br><span class="line">    &lt;li *ngSwitchCase=&quot;4&quot;&gt;Fourth choice&lt;/li&gt;</span><br><span class="line">    &lt;li *ngSwitchCase=&quot;2&quot;&gt;Second choice, again&lt;/li&gt;</span><br><span class="line">    &lt;li *ngSwitchDefault&gt;Default choice&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>可以同时显示多个分支例如,在上面的示例中choice是2时,第二和第五li将渲染</p>
+</blockquote>
+<h5 id="NgNonBindable"><a href="#NgNonBindable" class="headerlink" title="NgNonBindable"></a>NgNonBindable</h5><p>比方说，我们要渲染在我们模板中的纯字符串。通常，该文本将因为我们使用的模板语法绑定到content变量的值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;span class=&quot;bordered&quot;&gt;&#123;&#123; content &#125;&#125;&lt;/span&gt;</span><br><span class="line">&lt;span class=&quot;pre&quot; ngNonBindable&gt;</span><br><span class="line">    &amp;lt;-- This is what &#123;&#123; content &#125;&#125; rendered &lt;/span&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="NgTemplateOutlet"><a href="#NgTemplateOutlet" class="headerlink" title="NgTemplateOutlet"></a>NgTemplateOutlet</h5><p>我们可以建立一个模板,使用这个模板,通过在不同的上下文可重用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;template  #foo let-name=&quot;name&quot; let-skills=&quot;skills&quot;&gt;</span><br><span class="line">    &lt;h4&gt;&#123;&#123;name&#125;&#125;&lt;/h4&gt;</span><br><span class="line">    &lt;ul&gt;</span><br><span class="line">      &lt;li *ngFor=&quot;let s of skills&quot;&gt;&#123;&#123;s&#125;&#125;&lt;/li&gt;</span><br><span class="line">    &lt;/ul&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;div [ngTemplateOutlet]=&quot;foo&quot; [ngOutletContext]=&quot;msg1&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;h1 style=&quot;background: yellow;&quot;&gt;&#123;&#123;text&#125;&#125;&lt;/h1&gt;</span><br><span class="line">&lt;div [ngTemplateOutlet]=&quot;foo&quot; [ngOutletContext]=&quot;msg2&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="自定义指令"><a href="#自定义指令" class="headerlink" title="自定义指令"></a>自定义指令</h4><h5 id="属性型指令"><a href="#属性型指令" class="headerlink" title="属性型指令"></a>属性型指令</h5><ul>
+<li><a href="http://blog.csdn.net/shenlei19911210/article/details/53218074" target="_blank" rel="external">Directive</a> 提供@Directive装饰器功能。</li>
+<li>ElementRef：是一个服务，注入到指令构造函数中，这样代码可以访问 DOM 元素。</li>
+<li>Input：将数据从绑定表达式传达到指令中。</li>
+<li>Renderer：写在构造函数中，让代码可以改变 DOM 元素的属性等（setElementAttribute，setElementStyle，setElementClass等）。</li>
+<li>host：添加监听事件。</li>
+</ul>
+<p>@Directive装饰器需要一个 CSS 选择器(属性名称加方括号-[attr])，以便从模板中识别出关联到这个指令的 HTML。<br>指令的选择器是[myHighlight]，Angular将会在模板中找到所有带myHighlight属性的元素。</p>
+<blockquote>
+<p>一定要记住在 @NgModule 的 declarations 数组中显示的声明我们定义的指令。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">import &#123; Directive, ElementRef, Renderer, HostListener, Input &#125; from &apos;@angular/core&apos;;</span><br><span class="line"></span><br><span class="line">@Directive(&#123;</span><br><span class="line">    selector: &apos;[prefixHightlight]&apos;,</span><br><span class="line">    host: &#123;</span><br><span class="line">        &apos;(click)&apos;: &apos;onclick()&apos;,</span><br><span class="line">        &apos;(mouseleave)&apos;: &apos;onMouseLeave()&apos;,</span><br><span class="line">        &apos;(mouseenter)&apos;: &apos;onMouseEnter()&apos;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>使用数据绑定向指令传递值,在定义这个属性的时候，我们调用了@Input()装饰器。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@Input(&apos;prefixHightlight&apos;) highlightColor: string;</span><br></pre></td></tr></table></figure>
+<p>添加监听事件另一种就是通过 @HostListener，直接操纵 DOM 元素的方式给宿主 DOM 元素附加一个事件监听器。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">@HostListener(&apos;mouseenter&apos;)</span><br><span class="line">onMouseEnter() &#123;&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="结构型指令"><a href="#结构型指令" class="headerlink" title="结构型指令"></a>结构型指令</h5><p><a href="http://blog.csdn.net/u010130282/article/details/53613297" target="_blank" rel="external">结构型指令</a>需要在构造方法注入TemplateRef和ViewContainerRef这两个服务，TemplateRef用于访问组件模板，ViewContainerRef是渲染器，用于往DOM插入或移除模板等。</p>
+<blockquote>
+<p>注意属性型和结构型子在dom元素中的写法</p>
+</blockquote>
+<h4 id="NgZone"><a href="#NgZone" class="headerlink" title="NgZone"></a>NgZone</h4><p>Angular应用程序通过组件实例和模板之间进行数据交互，也就是将组件的数据和页面DOM元素关连起来，当数据有变化后，NG2能够监测到这些变化并更新视图，反之亦然，它的数据流向是单项的，通过属性绑定和事件绑定来实现数据的流入和流出，数据从属性绑定流入组件，从事件流出组件，数据的双向绑定就是通过这样来实现的。</p>
+<h5 id="进行变化监测的情形"><a href="#进行变化监测的情形" class="headerlink" title="进行变化监测的情形"></a>进行变化监测的情形</h5><p>angular需要去更新视图的情形： </p>
+<ul>
+<li>event：在view中绑定事件来监听用户的操作，如果数据有变更则更新视图；</li>
+<li>xmlHTTPRequest/webSocket：例如从远端服务拉取对应的数据，这是一个异步的过程；</li>
+<li>timeout：例如：setTimeout, setInterval, requestAnimationFrame都是在某个延时后触发。</li>
+</ul>
+<p>(requestAnimationFrame)[<a href="http://www.zhangxinxu.com/wordpress/tag/requestanimationframe/" target="_blank" rel="external">http://www.zhangxinxu.com/wordpress/tag/requestanimationframe/</a>]</p>
+<p>这些都是异步的处理，即需要使用异步回调函数，结论就是，不管任何时候的一个异步操作，我们应用程序状态可能已经被改变，这就需要告诉Angular去更新视图。</p>
+<p><a href="http://www.cnblogs.com/czaiz/p/6530820.html" target="_blank" rel="external">关于zone</a>：简单的可以概述成zone是一个异步事件拦截器，也就是说zone能够hook到异步任务的执行上下文，以此来处理一些操作，比如说，在我们每次启动或者完成一个异步的操作、进行堆栈的跟踪处理、某段功能代码进入或者离开zone，我们可以在这些关键的节点重写我们所需处理的方法。</p>
+<p>实际上，ngZone是基于<a href="http://www.cnblogs.com/whitewolf/p/zone-js.html" target="_blank" rel="external">zone.js</a>来实现的，Angular2 fork了zone.js，它是zone派生出来的一个子zone，在Angular环境内注册的异步事件都运行在这个子zone上(因为ngZone拥有整个Angular运行环境的执行上下文)。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">基础</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">指令</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://peggy3399.github.io/2017/11/14/angular2-basic/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/11/14/angular2-routes/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Angular2路由</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#内置指令"><span class="toc-number">1.</span> <span class="toc-text">内置指令</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#NgStyle"><span class="toc-number">1.1.</span> <span class="toc-text">NgStyle</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#NgIf"><span class="toc-number">1.2.</span> <span class="toc-text">NgIf</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#NgClass"><span class="toc-number">1.3.</span> <span class="toc-text">NgClass</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#ngSwitch"><span class="toc-number">1.4.</span> <span class="toc-text">ngSwitch</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#NgNonBindable"><span class="toc-number">1.5.</span> <span class="toc-text">NgNonBindable</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#NgTemplateOutlet"><span class="toc-number">1.6.</span> <span class="toc-text">NgTemplateOutlet</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#自定义指令"><span class="toc-number">2.</span> <span class="toc-text">自定义指令</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#属性型指令"><span class="toc-number">2.1.</span> <span class="toc-text">属性型指令</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#结构型指令"><span class="toc-number">2.2.</span> <span class="toc-text">结构型指令</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#NgZone"><span class="toc-number">3.</span> <span class="toc-text">NgZone</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#进行变化监测的情形"><span class="toc-number">3.1.</span> <span class="toc-text">进行变化监测的情形</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -213,9 +412,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
