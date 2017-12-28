@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://peggy3399.github.io">
-  <title>Archives: 2017/11 | Peegy&#39;s Blog</title>
+  <title>vue-basic | Peegy&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="不要忘记做自己的太阳">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Peegy&#39;s Blog">
-<meta property="og:url" content="https://peggy3399.github.io/archives/2017/11/index.html">
+  <meta name="description" content="介绍Vue.js 是一个提供 MVVM(Model View ViewModel) 风格的双向数据绑定的 Javascript 库，专注于View 层。它的核心是 MVVM 中的 VM，也就是 ViewModel。ViewModel负责连接 View 和 Model，保证视图和数据的一致，这种轻量级的架构让前端开发更加高效、便捷。  vue.js特点就是（1） 简洁 （2） 轻量 （3）快速 （4">
+<meta name="keywords" content="vue,basic">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue-basic">
+<meta property="og:url" content="https://peggy3399.github.io/2017/12/28/vue-basic/index.html">
 <meta property="og:site_name" content="Peegy&#39;s Blog">
-<meta property="og:description" content="不要忘记做自己的太阳">
+<meta property="og:description" content="介绍Vue.js 是一个提供 MVVM(Model View ViewModel) 风格的双向数据绑定的 Javascript 库，专注于View 层。它的核心是 MVVM 中的 VM，也就是 ViewModel。ViewModel负责连接 View 和 Model，保证视图和数据的一致，这种轻量级的架构让前端开发更加高效、便捷。  vue.js特点就是（1） 简洁 （2） 轻量 （3）快速 （4">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-12-28T08:33:15.736Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Peegy&#39;s Blog">
-<meta name="twitter:description" content="不要忘记做自己的太阳">
+<meta name="twitter:title" content="vue-basic">
+<meta name="twitter:description" content="介绍Vue.js 是一个提供 MVVM(Model View ViewModel) 风格的双向数据绑定的 Javascript 库，专注于View 层。它的核心是 MVVM 中的 VM，也就是 ViewModel。ViewModel负责连接 View 和 Model，保证视图和数据的一致，这种轻量级的架构让前端开发更加高效、便捷。  vue.js特点就是（1） 简洁 （2） 轻量 （3）快速 （4">
   
     <link rel="alternative" href="/atom.xml" title="Peegy&#39;s Blog" type="application/atom+xml">
   
@@ -147,223 +149,282 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-vue-basic" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/14/angular2-basic/" class="archive-article-date">
-  	<time datetime="2017-11-14T03:47:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-14</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/14/angular2-basic/">Angular2-basic</a>
+    <h1 class="article-title" itemprop="name">
+      vue-basic
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/12/28/vue-basic/" class="archive-article-date">
+  	<time datetime="2017-12-28T07:44:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p><a href="https://vuefe.cn" target="_blank" rel="external">Vue.js</a> 是一个提供 MVVM(Model View ViewModel) 风格的双向数据绑定的 Javascript 库，专注于View 层。它的核心是 MVVM 中的 VM，也就是 ViewModel。ViewModel负责连接 View 和 Model，保证视图和数据的一致，这种轻量级的架构让前端开发更加高效、便捷。</p>
+<blockquote>
+<p>vue.js特点就是（1） 简洁 （2） 轻量 （3）快速 （4） 数据驱动 （5）双向绑定（6） 模块友好 （7） 组件化。</p>
+</blockquote>
+<a id="more"></a>
+<h4 id="1-搭建一个webpack-vue项目"><a href="#1-搭建一个webpack-vue项目" class="headerlink" title="1. 搭建一个webpack + vue项目"></a>1. 搭建一个webpack + vue项目</h4><ul>
+<li>npm install -g vue-cli  ==&gt;快速生成项目模版的工具</li>
+<li>vue init webpack my-project ==&gt;基于webpack的项目</li>
+<li>cd my-project</li>
+<li>npm install 安装需要的依赖</li>
+<li>npm run dev</li>
+</ul>
+<h4 id="2-构造器"><a href="#2-构造器" class="headerlink" title="2. 构造器"></a>2. 构造器</h4><p>创建vue实例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var vm = new Vue(&#123;</span><br><span class="line">  // 选项</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h4 id="3-基本用法"><a href="#3-基本用法" class="headerlink" title="3. 基本用法"></a>3. 基本用法</h4><h6 id="3-1-文本"><a href="#3-1-文本" class="headerlink" title="3.1 文本"></a>3.1 文本</h6><p>  数据绑定最基础的形式是文本插值，使用 “Mustache” 语法（双大括号）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;span&gt;Message: &#123;&#123; msg &#125;&#125;&lt;/span&gt;</span><br></pre></td></tr></table></figure>
+<p>  只执行一次插值v-once：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;span v-once&gt;This will never change: &#123;&#123; msg &#125;&#125;&lt;/span&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="3-2-原始HTML"><a href="#3-2-原始HTML" class="headerlink" title="3.2 原始HTML"></a>3.2 原始HTML</h5><p>  双大括号会将数据解释为纯文本，如果要输出真正的 HTML ，就需要使用 v-html 指令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div v-html=&quot;rawHtml&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<h5 id="3-3-指令和属性"><a href="#3-3-指令和属性" class="headerlink" title="3.3 指令和属性"></a>3.3 指令和属性</h5><p>  指令 (Directives) 是特殊的带有前缀 v- 的特性。指令的值限定为绑定表达式，指令的职责就是当其表达式的值改变时把某些特殊的行为应用到 DOM 上。<br>  有些指令可以在其名称后面带一个“参数” (Argument)，中间放一个冒号隔开。</p>
+<ul>
+<li>v-bind 指令用于绑定html特性：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;a v-bind:href=&quot;url&quot;&gt;&lt;/a&gt;</span><br><span class="line">&lt;a :href=&quot;url&quot;&gt;&lt;/a&gt;&lt;!-- 缩写 --&gt;</span><br></pre></td></tr></table></figure>
+<p>由此绑定class有两种写法：<br>v-bind:class和class=”“，但是不推荐混合使用。两者只能选其一！</p>
+<ul>
+<li>v-on 指令，它用于监听 DOM 事件：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;a v-on:click=&quot;doSomething&quot;&gt;</span><br><span class="line">&lt;a @click=&quot;doSomething&quot;&gt;&lt;/a&gt;&lt;!-- 缩写 --&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>便捷的修饰符（事件处理器详细说明）。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- v-on 指令触发事件时调用 event.preventDefault() --&gt;</span><br><span class="line">&lt;form v-on:submit.prevent=&quot;onSubmit&quot;&gt;&lt;/form&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- 只在按下回车键的时候触发事件 --&gt;</span><br><span class="line">&lt;input \@keyup.enter=&quot;submit&quot;&gt;</span><br></pre></td></tr></table></figure>
+<h5 id="3-4-计算属性"><a href="#3-4-计算属性" class="headerlink" title="3.4 计算属性"></a>3.4 计算属性</h5><pre><code>var vm = new Vue({
+  el: &apos;#demo&apos;,
+  data: {
+    firstName: &apos;Foo&apos;,
+    lastName: &apos;Bar&apos;
+  },
+  computed: {
+    fullName: function () {
+      return this.firstName + &apos; &apos; + this.lastName
+    }
+  }
+})//Foo Bar
+</code></pre><p>  计算属性默认只是 getter，不过在需要时你也可以提供一个 setter</p>
+<h5 id="3-5-条件渲染"><a href="#3-5-条件渲染" class="headerlink" title="3.5 条件渲染"></a>3.5 条件渲染</h5><ul>
+<li>v-if</li>
+</ul>
+<p>v-if 是一个指令，需要将它添加到一个元素上。如果想要切换多个元素，此时可以把一个 <code>&lt;template&gt;</code> 元素当做包装元素，并在上面使用 v-if，最终的渲染结果不会包含它。通过控制dom结构的添加与删除控制显示和隐藏。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;template v-if=&quot;ok&quot;&gt;</span><br><span class="line">  &lt;h1&gt;Title&lt;/h1&gt;</span><br><span class="line">  &lt;p&gt;Paragraph 1&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;Paragraph 2&lt;/p&gt;</span><br><span class="line">&lt;/template&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>v-show</p>
+<p>v-show的元素会始终渲染并保持在 DOM 中。v-show 是简单的切换元素的 CSS 属性 display。<br>注意 v-show 不支持 <code>&lt;template&gt;</code> 语法。</p>
+<p>v-show 用在组件上时，因为指令的优先级 v-else 会出现问题。另一个 v-show 替换 v-else。</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;custom-component v-show=&quot;condition&quot;&gt;&lt;/custom-component&gt;</span><br><span class="line">&lt;p v-show=&quot;!condition&quot;&gt;这可能也是一个组件&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>v-else</li>
+</ul>
+<p>元素必须立即跟在 v-if 或 v-show 元素的后面——否则它不能被识别。</p>
+<h5 id="3-6-列表渲染"><a href="#3-6-列表渲染" class="headerlink" title="3.6 列表渲染"></a>3.6 列表渲染</h5><p>v-for 指令基于一个数组渲染一个列表。形式为 item in items，items 是数据数组，item 是当前数组元素的别名。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul id=&quot;example-1&quot;&gt;</span><br><span class="line">    &lt;li v-for=&quot;item in items&quot;&gt;</span><br><span class="line">      &#123;&#123; item.message &#125;&#125;</span><br><span class="line">    &lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">var example1 = new Vue(&#123;</span><br><span class="line">  el: &apos;#example-1&apos;,</span><br><span class="line">  data: &#123;</span><br><span class="line">    items: [</span><br><span class="line">      &#123;message: &apos;foo&apos; &#125;,</span><br><span class="line">      &#123;message: &apos;Bar&apos; &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>这个只是最基本的用法，v-for还有多种用法，可以看文档的列表循环有详细介绍。</p>
+<h5 id="3-7-事件处理器"><a href="#3-7-事件处理器" class="headerlink" title="3.7 事件处理器"></a>3.7 事件处理器</h5><p>前面提到了监听事件，vue还有</p>
+<ul>
+<li>方法事件处理器(就是添加自定义方法来调用)：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;example-2&quot;&gt;</span><br><span class="line">  &lt;!-- &apos;greet&apos; 是在methods中定义的方法名 --&gt;</span><br><span class="line">  &lt;button v-on:click=&quot;greet&quot;&gt;Greet&lt;/button&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>内联处理器：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;example-3&quot;&gt;</span><br><span class="line">  &lt;button v-on:click=&quot;say(&apos;hi&apos;)&quot;&gt;Say hi&lt;/button&gt;</span><br><span class="line">  &lt;button v-on:click=&quot;say(&apos;what&apos;)&quot;&gt;Say what&lt;/button&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">new Vue(&#123;</span><br><span class="line">  el: &apos;#example-3&apos;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    say: function (message) &#123;</span><br><span class="line">      alert(message)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>  其实看上去只不顾就是传递了参数。</p>
+<h5 id="3-8-修饰符"><a href="#3-8-修饰符" class="headerlink" title="3.8 修饰符"></a>3.8 修饰符</h5><p>修饰符可以分为事件修饰符和按键修饰符,后面表单控件也有修饰符：</p>
+<h6 id="3-8-1-事件修饰符："><a href="#3-8-1-事件修饰符：" class="headerlink" title="3.8.1 事件修饰符："></a>3.8.1 事件修饰符：</h6><ul>
+<li>.stop</li>
+<li>.prevent</li>
+<li>.capture</li>
+<li>.self</li>
+</ul>
+<p>用法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 阻止单击事件冒泡 --&gt;</span><br><span class="line">&lt;a v-on:click.stop=&quot;doThis&quot;&gt;&lt;/a&gt;</span><br><span class="line">&lt;!-- 提交事件不再重载页面 --&gt;</span><br><span class="line">&lt;form v-on:submit.prevent=&quot;onSubmit&quot;&gt;&lt;/form&gt;</span><br><span class="line">&lt;!-- 修饰符可以串联  --&gt;</span><br><span class="line">&lt;a v-on:click.stop.prevent=&quot;doThat&quot;&gt;&lt;/a&gt;</span><br><span class="line">&lt;!-- 只有修饰符 --&gt;</span><br><span class="line">&lt;form v-on:submit.prevent&gt;&lt;/form&gt;</span><br><span class="line">&lt;!-- 添加事件侦听器时使用时间捕获模式 --&gt;</span><br><span class="line">&lt;div v-on:click.capture=&quot;doThis&quot;&gt;...&lt;/div&gt;</span><br><span class="line">&lt;!-- 只当事件在该元素本身（而不是子元素）触发时触发回调 --&gt;</span><br><span class="line">&lt;div v-on:click.self=&quot;doThat&quot;&gt;...&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<h6 id="3-8-2-按键修饰符："><a href="#3-8-2-按键修饰符：" class="headerlink" title="3.8.2 按键修饰符："></a>3.8.2 按键修饰符：</h6><p>全部的按键别名：</p>
+<ul>
+<li>enter </li>
+<li>tab </li>
+<li>delete(捕获 “删除” 和 “退格” 键)  </li>
+<li>esc </li>
+<li>space </li>
+<li>up  </li>
+<li>down  </li>
+<li>left  </li>
+<li>right</li>
+</ul>
+<p>用法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 只有在 keyCode 是 13 时调用 vm.submit() --&gt;</span><br><span class="line">&lt;input @keyup.enter=&quot;submit&quot;&gt;</span><br></pre></td></tr></table></figure></p>
+<h5 id="3-9-表单控件绑定"><a href="#3-9-表单控件绑定" class="headerlink" title="3.9 表单控件绑定"></a>3.9 表单控件绑定</h5><p>可以用 v-model 指令在表单控件元素上创建双向数据绑定。负责监听用户的输入事件以更新数据,根据控件类型它自动选取正确的方法更新元素.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;input v-model=&quot;message&quot; placeholder=&quot;edit me&quot;&gt;</span><br><span class="line">&lt;p&gt;Message is: &#123;&#123; message &#125;&#125;&lt;/p&gt;</span><br></pre></td></tr></table></figure></p>
+<p>类似与多个勾选框这种情况的(复选框等)，就需要绑定到同一个数组。(vue1.html)</p>
+<h6 id="3-9-1-表单控件修饰符"><a href="#3-9-1-表单控件修饰符" class="headerlink" title="3.9.1 表单控件修饰符"></a>3.9.1 表单控件修饰符</h6><ul>
+<li>.lazy</li>
+<li>.number 自动将用户的输入值转为 Number 类型（如果原值的转换结果为 NaN 则返回原值）</li>
+<li>.trim 自动过滤用户输入的首尾空格</li>
+</ul>
+<p>用法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 在 &quot;change&quot; 而不是 &quot;input&quot; 事件中更新 --&gt;</span><br><span class="line">&lt;input v-model.lazy=&quot;msg&quot; &gt;</span><br></pre></td></tr></table></figure></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">angular</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/14/angular2-routes/" class="archive-article-date">
-  	<time datetime="2017-11-14T03:45:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/14/angular2-routes/">Angular2路由</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">angular</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">路由</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">basic</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://peggy3399.github.io/2017/12/28/vue-basic/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/13/sass语法/" class="archive-article-date">
-  	<time datetime="2017-11-13T08:27:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-13</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2017/12/28/vue-advanced/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          vue-advanced
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/12/28/yarn/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">yarn</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/13/sass语法/">sass语法</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">sass</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/13/关闭占用端口/" class="archive-article-date">
-  	<time datetime="2017-11-13T08:27:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/13/关闭占用端口/">关闭占用端口</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">命令行</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/11/13/git操作/" class="archive-article-date">
-  	<time datetime="2017-11-13T07:03:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/11/13/git操作/">git操作</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2017/11/page/2/">2</a><a class="extend next" rel="next" href="/archives/2017/11/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -387,8 +448,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

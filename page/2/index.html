@@ -67,6 +67,10 @@
     			
             
     			
+    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">战队</a>
+    			
+            
+    			
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
@@ -145,36 +149,32 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-git操作" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-vue-basic" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/13/git操作/">git操作</a>
+      <a class="article-title" href="/2017/12/28/vue-basic/">vue-basic</a>
     </h1>
   
 
         
-        <a href="/2017/11/13/git操作/" class="archive-article-date">
-  	<time datetime="2017-11-13T07:03:14.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-13</time>
+        <a href="/2017/12/28/vue-basic/" class="archive-article-date">
+  	<time datetime="2017-12-28T07:44:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-28</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="第一次提交本地代码到远程分支"><a href="#第一次提交本地代码到远程分支" class="headerlink" title="第一次提交本地代码到远程分支"></a>第一次提交本地代码到远程分支</h4><ul>
-<li>git init</li>
-<li>git remote add origin https://… .git</li>
-<li>git pull origin master –allow-unrelated-histories</li>
-<li>git add .</li>
-<li>git commit -m ‘解释说明文字’</li>
-<li>git push oriign master</li>
-</ul>
+        <h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p><a href="https://vuefe.cn" target="_blank" rel="external">Vue.js</a> 是一个提供 MVVM(Model View ViewModel) 风格的双向数据绑定的 Javascript 库，专注于View 层。它的核心是 MVVM 中的 VM，也就是 ViewModel。ViewModel负责连接 View 和 Model，保证视图和数据的一致，这种轻量级的架构让前端开发更加高效、便捷。</p>
+<blockquote>
+<p>vue.js特点就是（1） 简洁 （2） 轻量 （3）快速 （4） 数据驱动 （5）双向绑定（6） 模块友好 （7） 组件化。</p>
+</blockquote>
         
-          <a class="article-more-a" href="/2017/11/13/git操作/#more">more >></a>
+          <a class="article-more-a" href="/2017/12/28/vue-basic/#more">more >></a>
         
       
 
@@ -188,7 +188,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vue</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">basic</a>
         		</li>
       		
 		</ul>
@@ -198,7 +202,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/13/git操作/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/12/28/vue-basic/">展开全文 >></a>
         </p>
       
 
@@ -228,31 +232,130 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-yarn" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/13/hello-world/">Hello Everybody</a>
+      <a class="article-title" href="/2017/12/28/yarn/">yarn</a>
     </h1>
   
 
         
-        <a href="/2017/11/13/hello-world/" class="archive-article-date">
-  	<time datetime="2017-11-13T06:52:33.315Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-13</time>
+        <a href="/2017/12/28/yarn/" class="archive-article-date">
+  	<time datetime="2017-12-28T07:43:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-28</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>今天，我创建了自己的微博，很开心跟大家分享！</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+        <a id="more"></a>
+<h4 id="yarn-搭建vue脚手架"><a href="#yarn-搭建vue脚手架" class="headerlink" title="yarn 搭建vue脚手架"></a>yarn 搭建vue脚手架</h4><h5 id="安装yarn（Windows）"><a href="#安装yarn（Windows）" class="headerlink" title="安装yarn（Windows）"></a>安装<a href="https://yarnpkg.com/zh-Hans/docs/install" target="_blank" rel="external">yarn</a>（Windows）</h5><p>官网有三种安装方式，这里只说最简单的安装程序安装。<br>安装之前需要安装node.js。</p>
+<p>运行curl -o- -L <a href="https://yarnpkg.com/install.sh" target="_blank" rel="external">https://yarnpkg.com/install.sh</a> | bash命令即可安装或者点击<a href="https://github-production-release-asset-2e65be.s3.amazonaws.com/49970642/3b8d1478-5db4-11e7-8857-b0f901597104?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170801%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20170801T091331Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=7a540044b7da221b5fe4195d1610043dda2a39eeb10c89ce893a85d4d2192547&amp;X-Amz-SignedHeaders=host&amp;actor_id=21299272&amp;response-content-disposition=attachment%3B%20filename%3Dyarn-0.27.5.msi&amp;response-content-type=application%2Foctet-stream" target="_blank" rel="external">安装</a></p>
+<blockquote>
+<p>查看版本 yarn –version vue –version</p>
+</blockquote>
+<h4 id="简单形式"><a href="#简单形式" class="headerlink" title="简单形式"></a><a href="https://mp.weixin.qq.com/s?__biz=MzA5NTM2MTEzNw%3D%3D&amp;idx=1&amp;mid=2736710892&amp;sn=8a086429d6f91b7248a7f327d33c20ce" target="_blank" rel="external">简单形式</a></h4><ul>
+<li>yarn add global vue-cli</li>
+<li>yarn vue</li>
+<li>vue init webpack-simple my-project</li>
+<li>cd my-project</li>
+<li>yarn </li>
+<li>yarn run dev</li>
+</ul>
+<h4 id="复杂形式"><a href="#复杂形式" class="headerlink" title="复杂形式"></a>复杂形式</h4><ul>
+<li>yarn add global vue-cli</li>
+<li>vue init webpack my-project</li>
+<li>cd my-project</li>
+<li>yarn </li>
+<li>yarn run dev</li>
+</ul>
+<blockquote>
+<p>打开你的浏览器连到<a href="http://localhost:8080/就可以看到运行的界面。" target="_blank" rel="external">http://localhost:8080/就可以看到运行的界面。</a></p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">yarn</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/28/yarn/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
         
-          <a class="article-more-a" href="/2017/11/13/hello-world/#more">more >></a>
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-angular2-basic" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/14/angular2-basic/">Angular2-basic</a>
+    </h1>
+  
+
+        
+        <a href="/2017/11/14/angular2-basic/" class="archive-article-date">
+  	<time datetime="2017-11-14T03:47:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="内置指令"><a href="#内置指令" class="headerlink" title="内置指令"></a>内置指令</h4><p>Angular2 指令是构成Angular2应用程序的重要组成部分，指令主要用来对模板的标签或者元素附加一些新的特性或者功能，改变一个 DOM 元素的外观或行为，主要存在两种类型的指令：</p>
+<ul>
+<li>结构型指令：会通过添加 / 删除 DOM 元素来更改 DOM 树布局</li>
+<li>属性型指令：指令改变一个元素的外观或行为。</li>
+</ul>
+        
+          <a class="article-more-a" href="/2017/11/14/angular2-basic/#more">more >></a>
         
       
 
@@ -266,7 +369,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">hello</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">angular</a>
         		</li>
       		
 		</ul>
@@ -276,7 +379,168 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/13/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/11/14/angular2-basic/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-angular2-routes" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/14/angular2-routes/">Angular2路由</a>
+    </h1>
+  
+
+        
+        <a href="/2017/11/14/angular2-routes/" class="archive-article-date">
+  	<time datetime="2017-11-14T03:45:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="路由概述"><a href="#路由概述" class="headerlink" title="路由概述"></a>路由概述</h4><p>  大多数带路由的应用都要在 index.html 的 <head> 标签下先添加一个 <base> 元素，来告诉路由器该如何合成导航用的 URL 。</head></p>
+<p>  Angular2包含了一个路由框架，我们只需要定义一个个的路径、和它对应的组件，然后在页面跳转时也使用Angular2的方式，我们就能够很方便的实现路由控制。</p>
+        
+          <a class="article-more-a" href="/2017/11/14/angular2-routes/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">angular</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">路由</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/11/14/angular2-routes/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-sass语法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/11/13/sass语法/">sass语法</a>
+    </h1>
+  
+
+        
+        <a href="/2017/11/13/sass语法/" class="archive-article-date">
+  	<time datetime="2017-11-13T08:27:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="导入文件"><a href="#导入文件" class="headerlink" title="导入文件"></a>导入文件</h4><p> <a href="http://www.w3cplus.com/sassguide/syntax.html" target="_blank" rel="external">sass</a>的导入(@import)规则和CSS的有所不同，编译时会将@import的scss文件合并进来只生成一个CSS文件。但是如果你在sass文件中导入css文件如@import ‘reset.css’，那效果跟普通CSS导入样式文件一样， 文件中，而是以@import方式存在。<br> 所有的sass导入文件都可以忽略后缀名.scss。一般来说基础的文件命名方法以_开头，如_mixin.scss。这种文件在导入的时候可以不写下划线，可写成@import “mixin”。</p>
+        
+          <a class="article-more-a" href="/2017/11/13/sass语法/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">sass</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/11/13/sass语法/">展开全文 >></a>
         </p>
       
 
@@ -308,7 +572,7 @@
   
   
     <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
     </nav>
   
 
@@ -364,17 +628,25 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
       
       
     
+      
+      
+      
+    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">荣耀战绩</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">荣耀战绩</a></li>
       
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">战队</a></li>
+      
+        
+      
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -403,11 +675,15 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">hello</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">hello</a>
+                <a href="javascript:void(0)" class="js-tag color4">vue</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -416,6 +692,22 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">css</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">basic</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">component</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">yarn</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -469,6 +761,18 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
     	</section>
     
 
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="/www.blueocean-health.com" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>蓝海健康</a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
     
 
     
