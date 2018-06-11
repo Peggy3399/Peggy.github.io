@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://peggy3399.github.io">
-  <title>vue-router | Peegy&#39;s Blog</title>
+  <title>vue2.0探索之vuex.md | Peegy&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="安装：npm install vue-router --save vue路由主要就是通过使用 router-link(默认会被渲染成一个 &amp;lt;a&amp;gt; 标签) 组件来导航，通过传入 to 属性指定链接, 最后渲染在&amp;lt;router-view&amp;gt;中，实现SPA。 &amp;lt;p&amp;gt;     &amp;lt;router-link to=&amp;quot;/foo&amp;quot;&amp;gt;Go to Foo">
-<meta name="keywords" content="vue,路由">
+  <meta name="description" content="事出必有因随着项目的需求，组件之间的数据交互变得越来越频繁且关系密切，如果这个时候还局限于props和$emit，觉得自己太low了，于是乎，就想要好好的学习一下vuex，之后发现自己用错了它的功能，接下来好好说道说道。 介绍Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。（我自己感觉其实就">
+<meta name="keywords" content="vue,vuex">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue-router">
-<meta property="og:url" content="https://peggy3399.github.io/2017/12/28/vue-router/index.html">
+<meta property="og:title" content="vue2.0探索之vuex.md">
+<meta property="og:url" content="https://peggy3399.github.io/2018/06/11/vue2-0探索之vuex-md/index.html">
 <meta property="og:site_name" content="Peegy&#39;s Blog">
-<meta property="og:description" content="安装：npm install vue-router --save vue路由主要就是通过使用 router-link(默认会被渲染成一个 &amp;lt;a&amp;gt; 标签) 组件来导航，通过传入 to 属性指定链接, 最后渲染在&amp;lt;router-view&amp;gt;中，实现SPA。 &amp;lt;p&amp;gt;     &amp;lt;router-link to=&amp;quot;/foo&amp;quot;&amp;gt;Go to Foo">
+<meta property="og:description" content="事出必有因随着项目的需求，组件之间的数据交互变得越来越频繁且关系密切，如果这个时候还局限于props和$emit，觉得自己太low了，于是乎，就想要好好的学习一下vuex，之后发现自己用错了它的功能，接下来好好说道说道。 介绍Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。（我自己感觉其实就">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-28T08:08:48.249Z">
+<meta property="og:updated_time" content="2018-06-11T10:27:32.464Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue-router">
-<meta name="twitter:description" content="安装：npm install vue-router --save vue路由主要就是通过使用 router-link(默认会被渲染成一个 &amp;lt;a&amp;gt; 标签) 组件来导航，通过传入 to 属性指定链接, 最后渲染在&amp;lt;router-view&amp;gt;中，实现SPA。 &amp;lt;p&amp;gt;     &amp;lt;router-link to=&amp;quot;/foo&amp;quot;&amp;gt;Go to Foo">
+<meta name="twitter:title" content="vue2.0探索之vuex.md">
+<meta name="twitter:description" content="事出必有因随着项目的需求，组件之间的数据交互变得越来越频繁且关系密切，如果这个时候还局限于props和$emit，觉得自己太low了，于是乎，就想要好好的学习一下vuex，之后发现自己用错了它的功能，接下来好好说道说道。 介绍Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。（我自己感觉其实就">
   
     <link rel="alternative" href="/atom.xml" title="Peegy&#39;s Blog" type="application/atom+xml">
   
@@ -153,239 +153,76 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-vue-router" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-vue2-0探索之vuex-md" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      vue-router
+      vue2.0探索之vuex.md
     </h1>
   
 
         
-        <a href="/2017/12/28/vue-router/" class="archive-article-date">
-  	<time datetime="2017-12-28T07:47:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-28</time>
+        <a href="/2018/06/11/vue2-0探索之vuex-md/" class="archive-article-date">
+  	<time datetime="2018-06-11T10:25:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-11</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="安装："><a href="#安装：" class="headerlink" title="安装："></a>安装：</h4><pre><code>npm install vue-router --save
-</code></pre><p>vue路由主要就是通过使用 router-link(默认会被渲染成一个 <code>&lt;a&gt;</code> 标签) 组件来导航，通过传入 <code>to</code> 属性指定链接, 最后渲染在<code>&lt;router-view&gt;</code>中，实现SPA。</p>
-<pre><code>&lt;p&gt;
-    &lt;router-link to=&quot;/foo&quot;&gt;Go to Foo&lt;/router-link&gt;
-&lt;/p&gt;
-&lt;router-view&gt;&lt;/router-view&gt;
-</code></pre><p>我目前了解的主要是webpack + ES2015实现vue。如果要实现路由，文件基本写法就是：</p>
-<a id="more"></a>
+        <h4 id="事出必有因"><a href="#事出必有因" class="headerlink" title="事出必有因"></a>事出必有因</h4><p>随着项目的需求，组件之间的数据交互变得越来越频繁且关系密切，如果这个时候还局限于props和$emit，觉得自己太low了，于是乎，就想要好好的学习一下vuex，之后发现自己用错了它的功能，接下来好好说道说道。</p>
+<h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。（我自己感觉其实就是个管家…）</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><h5 id="NPM"><a href="#NPM" class="headerlink" title="NPM"></a>NPM</h5><p>npm install vuex –save</p>
+<h5 id="Yarn"><a href="#Yarn" class="headerlink" title="Yarn"></a>Yarn</h5><p>yarn add vuex</p>
+<p>在vue项目中引用一些公用的库等都写在main.js，但此次不直接写在其中，通过引入写在store.js文件中，main.js中引入store.js（以下代码均为store.js中内容）：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// main.js</span><br><span class="line">import store from &apos;./vuex/store&apos;</span><br><span class="line">Vue.use(store)</span><br><span class="line"></span><br><span class="line">new Vue(&#123;</span><br><span class="line">  store,</span><br><span class="line">  render: h =&gt; h(App)</span><br><span class="line">&#125;).$mount(&apos;#app-box&apos;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// store.js</span><br><span class="line">import Vue from &apos;vue&apos;</span><br><span class="line">import Vuex from &apos;vuex&apos;</span><br><span class="line">Vue.use(Vuex)</span><br><span class="line"></span><br><span class="line">// ..</span><br><span class="line"></span><br><span class="line">export default new Vuex.Store(&#123;</span><br><span class="line">  state,</span><br><span class="line">  getters,</span><br><span class="line">  mutations,</span><br><span class="line">  actions</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h4 id="成员介绍"><a href="#成员介绍" class="headerlink" title="成员介绍"></a>成员介绍</h4><h5 id="State"><a href="#State" class="headerlink" title="State"></a>State</h5><p>状态库： Vuex使用的是单一状态树，也就是一个应用仅一个store实例。这个状态库中的数据，在项目任何组件中都可以使用，是全局的状态。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const state = &#123;</span><br><span class="line">    numList: [0, 1, 2, 3, 4, 5]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h5 id="Getter"><a href="#Getter" class="headerlink" title="Getter"></a>Getter</h5><p>获取状态数据：类似于computed计算属性，这个部分通常写一些处理状态数据的代码，比如过滤state中的某个状态数据。<br>第一个参数是state，因为getter会暴露在store中，所以第二个参数getters是可以接受其他模块中的getter</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const getters = &#123;</span><br><span class="line">    filterEvenNum (state) &#123;</span><br><span class="line">        state.numList = state.numList.filter(s =&gt; s % 2 === 0)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="Mutation"><a href="#Mutation" class="headerlink" title="Mutation"></a>Mutation</h5><p>变化：类似于组件中methods，在vuex中改变store中state的值，只能通过mutation，注意mutation只进行同步操作。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const mutations = &#123;</span><br><span class="line">    increment (state) &#123;</span><br><span class="line">        state.numList.forEach(num =&gt; num++)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>mutation还可以接受传值，这样代码可以改写为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const mutations = &#123;</span><br><span class="line">    increment (state, value = 1) &#123;</span><br><span class="line">        state.numList.forEach(num =&gt; &#123; num += value &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>触发mutation比较特殊，是通过commit：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">store.commit(&apos;increment&apos;, 2)</span><br><span class="line"></span><br><span class="line">//vue页面触发</span><br><span class="line">this.$store.commit(&apos;increment&apos;, 2)</span><br></pre></td></tr></table></figure>
+<p>使用mutation改变状态有需要遵守的规则这里提一个，剩下可以查看<a href="https://vuex.vuejs.org/zh/guide/mutations.html" target="_blank" rel="external">官方文档说明</a>。</p>
+<p>mutation接受的参数过多时，通常使用对象来作为参数接受，平常封装函数我们也经常这么干，所以so easy，mutation改变状态时最好是用新对象来代替旧对象（ES6写法）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">state.obj = &#123; ...state.obj, newProp: 123 &#125;</span><br></pre></td></tr></table></figure>
+<h5 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h5><p>Action 类似于 mutation，不同在于：</p>
 <ul>
-<li>调用 Vue.use(VueRouter)</li>
-<li>定义路由组件(import导入需要渲染的组件)</li>
-<li>定义路由</li>
-<li>创建router实例</li>
-<li>创建挂载根实例(就是路由最终在页面实现的根元素)</li>
+<li>Action 提交的是 mutation，而不是直接变更状态。</li>
+<li>Action 可以包含任意异步操作。</li>
 </ul>
-<h4 id="基本写法："><a href="#基本写法：" class="headerlink" title="基本写法："></a>基本写法：</h4><pre><code>import Vue from &apos;vue/dist/vue&apos;
-import VueRouter from &apos;vue-router&apos;
-
-// 1. Use plugin.
-// This installs &lt;router-view&gt; and &lt;router-link&gt;,
-// and injects $router and $route to all router-enabled child components
-Vue.use(VueRouter)
-
-// 2. Define route components
-const Home = { template: &apos;&lt;div&gt;home&lt;/div&gt;&apos; }
-const Foo = { template: &apos;&lt;div&gt;foo&lt;/div&gt;&apos; }
-const Bar = { template: &apos;&lt;div&gt;bar&lt;/div&gt;&apos; }
-
-// 3. Create the router
-const router = new VueRouter({
-  mode: &apos;history&apos;,
-  base: __dirname,
-  routes: [
-    { path: &apos;/&apos;, component: Home },
-    { path: &apos;/foo&apos;, component: Foo },
-    { path: &apos;/bar&apos;, component: Bar }
-  ]
-})
-
-// 4. Create and mount root instance.
-// Make sure to inject the router.
-// Route components will be rendered inside &lt;router-view&gt;.
-new Vue({
-  router,
-  template: `
-    &lt;div id=&quot;app&quot;&gt;
-      &lt;h1&gt;Basic&lt;/h1&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;router-link to=&quot;/&quot;&gt;/&lt;/router-link&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;router-link to=&quot;/foo&quot;&gt;/foo&lt;/router-link&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;router-link to=&quot;/bar&quot;&gt;/bar&lt;/router-link&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;router-view class=&quot;view&quot;&gt;&lt;/router-view&gt;
-    &lt;/div&gt;
-  `
-}).$mount(&apos;#app&apos;)
-</code></pre><ul>
-<li>mode(模式)选项取值为： (默认是 “hash”):</li>
-<li>“hash” ：hash就是利用#做路由切换</li>
-<li>“history” ：history是利用 history.pushState API 来完成 URL 跳转而无须重新加载页面。（需要后台配置）</li>
-<li>“abstract” ：abstract一样，只不过，history会记录历史位置</li>
-<li>base：用的基路径。例如，如果整个单页应用服务在 /app/ 下，然后 base 就应该设为 “/app/“。</li>
-<li>linkActiveClass：全局配置 <code>&lt;router-link&gt;</code> 的默认『激活 class 类名』</li>
-<li>scrollBehavior 滚动行为</li>
-</ul>
+<p>Action 函数接受一个与 store 实例具有相同方法和属性的 context 对象，所以可以使用context.commit, context.rootState, context.getters。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">const actions = &#123;</span><br><span class="line">    increment (&#123; commit &#125;, value) &#123;</span><br><span class="line">        setTimeout(function () &#123;</span><br><span class="line">          commit(&apos;increment&apos;, value)</span><br><span class="line">        &#125;, 2000)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>action可以结合ES2015中promise使用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const actions = &#123;</span><br><span class="line">    increment (&#123; commit &#125;, value) &#123;</span><br><span class="line">        return new Promise((resolve, reject) =&gt; &#123;</span><br><span class="line">            setTimeout(function () &#123;</span><br><span class="line">              commit(&apos;increment&apos;, value)</span><br><span class="line">              resolve()</span><br><span class="line">            &#125;, 2000)</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>触发action是通过dispatch：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">store.dispatch(&apos;increment&apos;)</span><br><span class="line"></span><br><span class="line">//vue页面触发</span><br><span class="line">this.$store.dispatch(&apos;increment&apos;)</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>注意: 这个功能只在 HTML5 history 模式下可用。</p>
+<p>mutation和action都可以通过对象风格的方式提交和分发：</p>
 </blockquote>
-<pre><code>const router = new VueRouter({
-  routes: [...],
-  scrollBehavior (to, from, savedPosition) {
-    // return 期望滚动到哪个的位置
-  }
-})
-</code></pre><p>例子1：对于所有路由导航，简单地让页面滚动到顶部。</p>
-<pre><code>scrollBehavior (to, from, savedPosition) {
-    return { x: 0, y: 0 }
-}
-</code></pre><p>例子2：返回 savedPosition，在按下 后退/前进 按钮时，就会像浏览器的原生表现那样：</p>
-<pre><code>scrollBehavior (to, from, savedPosition) {
-    if (savedPosition) {
-        return savedPosition
-    } else {
-        return { x: 0, y: 0 }
-    }
-}
-</code></pre><p>例子3：模拟『滚动到锚点』的行为：</p>
-<pre><code>scrollBehavior (to, from, savedPosition) {
-    if (to.hash) {
-        return {
-          selector: to.hash
-        }
-    }
-}
-</code></pre><blockquote>
-<p><a href="https://github.com/vuejs/vue-router/blob/next/examples/scroll-behavior/app.js" target="_blank" rel="external">一个完整例子</a></p>
-</blockquote>
-<h4 id="router-link"><a href="#router-link" class="headerlink" title="router-link"></a>router-link</h4><p><code>&lt;router-link&gt;</code>还有以下属性参数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">commit(&#123;</span><br><span class="line">    type：&apos;increment&apos;,</span><br><span class="line">    value： 2</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h5 id="Module"><a href="#Module" class="headerlink" title="Module"></a>Module</h5><p>module主要针对于比较大型的项目，数据比较繁琐都写在一起会不容易维护，可以根据功能等将store模块化，每个模块拥有自己的 state、mutation、action、getter。我们上面的代码就可以将名称store.js换位num.js仅仅作为操作数据的模块。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">const moduleA = &#123;</span><br><span class="line">  state: &#123; ... &#125;,</span><br><span class="line">  mutations: &#123; ... &#125;,</span><br><span class="line">  actions: &#123; ... &#125;,</span><br><span class="line">  getters: &#123; ... &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const moduleB = &#123;</span><br><span class="line">  state: &#123; ... &#125;,</span><br><span class="line">  mutations: &#123; ... &#125;,</span><br><span class="line">  actions: &#123; ... &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const store = new Vuex.Store(&#123;</span><br><span class="line">  modules: &#123;</span><br><span class="line">    a: moduleA,</span><br><span class="line">    b: moduleB</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">store.state.a // -&gt; moduleA 的状态</span><br><span class="line">store.state.b // -&gt; moduleB 的状态</span><br></pre></td></tr></table></figure>
+<h4 id="vue文件中使用方法"><a href="#vue文件中使用方法" class="headerlink" title="vue文件中使用方法"></a>vue文件中使用方法</h4><p>state，getter，mutation，action在vue文件中使用方式均有两种，这里拿state作为例子，其他类似，聪明的你肯定会举一反三：</p>
 <ul>
-<li>to: 表示目标路由的链接。当被点击后，内部会立刻把 to 的值传到 router.push()，所以这个值可以是一个字符串或者是描述目标位置的对象。</li>
-<li>tag: 渲染为的 html 元素类型，默认是<code>&lt;a&gt;</code>.</li>
-<li>exact: 用于控制当前激活项的匹配行为。<br>举个例子，如果当前的路径是 /a 开头的，那么<code>&lt;router-link to=&quot;/a&quot;&gt;</code> 也会被设置 CSS 类名。</li>
-<li>append: 设置 append 属性后，则在当前（相对）路径前添加基路径。例如，我们从 /a 导航到一个相对路径 b，如果没有配置 append，则路径为 /b，如果配了，则为 /a/b。</li>
-<li>replace: 设置 replace 属性的话，当点击时，会调用 router.replace() 而不是 router.push()，于是导航后不会留下 history 记录。</li>
-<li>active-class: 当链接项激活时增加的 CSS 样式，默认值: “router-link-active”。</li>
+<li>通过mapState</li>
 </ul>
-<blockquote>
-<p>用<code>&lt;router-link&gt;</code>可以渲染外层元素，包裹着内层的原生 <code>&lt;a&gt;</code> 标签。</p>
-</blockquote>
-<h4 id="router-view"><a href="#router-view" class="headerlink" title="router-view"></a>router-view</h4><p>就是组件被渲染时要填的坑。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">import &#123; mapState &#125; from &apos;vuex&apos;</span><br><span class="line">export default &#123;</span><br><span class="line">    // ...</span><br><span class="line">    computed: &#123;</span><br><span class="line">        ...maptate(&#123;</span><br><span class="line">            numList: state =&gt; state.numList,</span><br><span class="line">            // numArr在此页面中的新名字，&apos;numList&apos;等同于state =&gt; state.numList</span><br><span class="line">            numArr: &apos;numList&apos;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果名字一致，也可以写在数组当中：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mapState([</span><br><span class="line">    &apos;numList&apos;</span><br><span class="line">])</span><br></pre></td></tr></table></figure></p>
+<p>此文件中后续使用this.numList或者this.numArr</p>
 <ul>
-<li>路由嵌套</li>
+<li>通过$store<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">this.$store.state.numList</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<p>如果使用路由的嵌套，组件包含自己的嵌套 <code>&lt;router-view&gt;</code>就可以。</p>
-<pre><code>const User = {
-  template: `
-    &lt;div class=&quot;user&quot;&gt;
-      &lt;h2&gt;User {{ $route.params.id }}&lt;/h2&gt;
-      &lt;router-view&gt;&lt;/router-view&gt;
-    &lt;/div&gt;
-  `
-}
-</code></pre><p>这时就需要在路由路径配置当中，写上children，然后进行组件自己的路由，children 配置就是像 routes 配置一样的路由配置数组。</p>
-<pre><code>const router = new VueRouter({
-  routes: [
-    { path: &apos;/user/:id&apos;, component: User,
-      children: [
-        {
-          // 当 /user/:id/profile 匹配成功，
-          // UserProfile 会被渲染在 User 的 &lt;router-view&gt; 中
-          path: &apos;profile&apos;,
-          component: UserProfile
-        },
-        {
-          // 当 /user/:id/posts 匹配成功
-          // UserPosts 会被渲染在 User 的 &lt;router-view&gt; 中
-          path: &apos;posts&apos;,
-          component: UserPosts
-        }
-      ]
-    }
-  ]
-})
-</code></pre><ul>
-<li>命名视图</li>
-</ul>
-<p>想同时（同级）展示多个视图，而不是嵌套展示,这时可以设置多个出口，也就是<code>&lt;router-view &gt;</code>，如果 <code>&lt;router-view &gt;</code> 没有设置名字，那么默认为 default。</p>
-<pre><code>&lt;router-view class=&quot;view one&quot;&gt;&lt;/router-view&gt;
-&lt;router-view class=&quot;view two&quot; name=&quot;a&quot;&gt;&lt;/router-view&gt;
-&lt;router-view class=&quot;view three&quot; name=&quot;b&quot;&gt;&lt;/router-view
+<p>如果是模块化的store，请看<a href="https://vuex.vuejs.org/zh/guide/modules.html" target="_blank" rel="external">官方说明</a></p>
+<h4 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">├── index.html</span><br><span class="line">├── main.js</span><br><span class="line">├── api</span><br><span class="line">│   └── ... # 抽取出API请求</span><br><span class="line">├── components</span><br><span class="line">│   ├── App.vue</span><br><span class="line">│   └── ...</span><br><span class="line">└── store</span><br><span class="line">    ├── index.js          # 我们组装模块并导出 store 的地方</span><br><span class="line">    ├── actions.js        # 根级别的 action</span><br><span class="line">    ├── mutations.js      # 根级别的 mutation</span><br><span class="line">    └── modules</span><br><span class="line">        ├── cart.js       # 购物车模块</span><br><span class="line">        └── products.js   # 产品模块</span><br></pre></td></tr></table></figure>
+<p>参考文档：<a href="https://vuex.vuejs.org/zh/" target="_blank" rel="external">https://vuex.vuejs.org/zh/</a></p>
 
-const router = new VueRouter({
-  routes: [
-    {
-      path: &apos;/&apos;,
-      components: {
-        default: Foo,
-        a: Bar,
-        b: Baz
-      }
-    }
-  ]
-})
-</code></pre><h4 id="router的重定向和别名"><a href="#router的重定向和别名" class="headerlink" title="router的重定向和别名"></a>router的重定向和别名</h4><ul>
-<li>重定向</li>
-</ul>
-<p>重定向我的理解就是重新定方向，本来路由要走的/a这个路由，由于重定向就会改变为/b。写法:</p>
-<pre><code>{ path: &apos;/a&apos;, redirect: &apos;/b&apos; }
-</code></pre><p>也可以是有name的路由：</p>
-<pre><code>{ path: &apos;/a&apos;, redirect: { name: &apos;foo&apos; }}
-</code></pre><p>甚至是一个方法，动态返回重定向目标：</p>
-<pre><code>const router = new VueRouter({
-  routes: [
-    { path: &apos;/a&apos;, redirect: to =&gt; {
-      // 方法接收 目标路由 作为参数
-      // return 重定向的 字符串路径/路径对象
-    }}
-  ]
-})
-</code></pre><blockquote>
-<p><a href="https://github.com/vuejs/vue-router/blob/next/examples/redirect/app.js" target="_blank" rel="external">一个好的例子</a></p>
-</blockquote>
-<ul>
-<li>别名</li>
-</ul>
-<p>别名就类似于我们的小名，/a 的别名是 /b，意味着，当用户访问 /b 时，URL 会保持为 /b，但是路由匹配则为 /a，就像用户访问 /a 一样。写法：</p>
-<pre><code>{ path: &apos;/a&apos;, component: A, alias: &apos;/b&apos; }
-</code></pre><h4 id="router实例的属性和方法"><a href="#router实例的属性和方法" class="headerlink" title="router实例的属性和方法"></a>router实例的属性和方法</h4><ul>
-<li>属性</li>
-</ul>
-<p>router.app: 配置了 router 的 Vue 根实例。<br>router.mode: 路由使用的 模式。<br>router.currentRoute: 当前路由对应的 路由信息对象.</p>
-<ul>
-<li>方法</li>
-</ul>
-<p>router.beforeEach(guard)<br>router.afterEach(hook)</p>
-<p>增加全局的导航钩子。参考 导航钩子.</p>
-<p>router.push(location)<br>router.replace(location)<br>router.go(n)：这个方法的参数是一个整数，意思是在 history 记录中向前或者后退多少步，类似 window.history.go(n)。<br>router.back()<br>router.forward()</p>
-<p>动态的导航到一个新 url。参考 编程式导航.</p>
-<ul>
-<li>router.getMatchedComponents()</li>
-</ul>
-<p>返回当前路由匹配的组件数组（是数组的定义/构造类，不是实例）。通常在服务端渲染的数据预加载时时候。</p>
-<h4 id="导航钩子"><a href="#导航钩子" class="headerlink" title="导航钩子"></a>导航钩子</h4><p>正如其名，vue-router 提供的导航钩子主要用来拦截导航，让它完成跳转或取消。有多种方式可以在路由导航发生时执行钩子：全局的, 单个路由独享的, 或者组件级的。</p>
-<ul>
-<li>全局钩子</li>
-</ul>
-<p>可以使用 router.beforeEach 注册一个全局的 before 钩子：</p>
-<pre><code>const router = new VueRouter({ ... })
-router.beforeEach((to, from, next) =&gt; {
-      // ...
-})
-</code></pre><p>当一个导航触发时，全局的 before 钩子按照创建顺序调用。钩子是异步解析执行，此时导航在所有钩子 resolve 完之前一直处于 等待中。</p>
-<h2 id="路由元信息"><a href="#路由元信息" class="headerlink" title="路由元信息"></a>路由元信息</h2><h2 id="数据获取"><a href="#数据获取" class="headerlink" title="数据获取"></a>数据获取</h2><h2 id="懒加载"><a href="#懒加载" class="headerlink" title="懒加载"></a>懒加载</h2><h2 id="路由信息对象"><a href="#路由信息对象" class="headerlink" title="路由信息对象"></a>路由信息对象</h2>
       
 
       
@@ -423,7 +260,7 @@ router.beforeEach((to, from, next) =&gt; {
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">路由</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">vuex</a>
         		</li>
       		
 		</ul>
@@ -479,7 +316,7 @@ router.beforeEach((to, from, next) =&gt; {
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://peggy3399.github.io/2017/12/28/vue-router/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://peggy3399.github.io/2018/06/11/vue2-0探索之vuex-md/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -493,18 +330,9 @@ router.beforeEach((to, from, next) =&gt; {
   
 <nav id="article-nav">
   
-    <a href="/2017/12/28/vue-component/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          vue-component
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/12/28/vue-advanced/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">vue-advanced</div>
+    <a href="/2018/01/12/JS大全/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JS大全</div>
       <i class="icon-circle-right"></i>
     </a>
   
