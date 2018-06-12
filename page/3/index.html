@@ -415,15 +415,36 @@
       
         <h4 id="第一次提交本地代码到远程分支"><a href="#第一次提交本地代码到远程分支" class="headerlink" title="第一次提交本地代码到远程分支"></a>第一次提交本地代码到远程分支</h4><ul>
 <li>git init</li>
-<li>git remote add origin https://… .git</li>
+<li>git remote add origin <a href="https://。。。.git" target="_blank" rel="external">https://。。。.git</a></li>
 <li>git pull origin master –allow-unrelated-histories</li>
 <li>git add .</li>
 <li>git commit -m ‘解释说明文字’</li>
 <li>git push oriign master</li>
 </ul>
-        
-          <a class="article-more-a" href="/2017/11/13/git操作/#more">more >></a>
-        
+<blockquote>
+<p>出现的问题fatal: refusing to merge unrelated histories<br>解决问题：git pull origin master –allow-unrelated-histories</p>
+</blockquote>
+<h4 id="创建本地分支提交到远程"><a href="#创建本地分支提交到远程" class="headerlink" title="创建本地分支提交到远程"></a>创建本地分支提交到远程</h4><ul>
+<li>git branch dev</li>
+<li>git checkout dev</li>
+<li>git add .</li>
+<li>git commit -m ‘解释说明文字’</li>
+<li>git push origin dev</li>
+</ul>
+<blockquote>
+<p>创建并切换分支：git checkout -b mybranch</p>
+</blockquote>
+<h4 id="拉取远程分支到本地"><a href="#拉取远程分支到本地" class="headerlink" title="拉取远程分支到本地"></a>拉取远程分支到本地</h4><ul>
+<li>git branch -r 查看远程分支</li>
+<li>git fetch origin 远程分支名x:本地分支名x(方法1)</li>
+<li>git checkout -b 本地分支名x origin/远程分支名x(方法2)</li>
+</ul>
+<h4 id="更改git仓库地址"><a href="#更改git仓库地址" class="headerlink" title="更改git仓库地址"></a>更改git仓库地址</h4><p>命令行修改</p>
+<ul>
+<li>git remote rm origin</li>
+<li>git remote add origin [url]</li>
+</ul>
+
       
 
       

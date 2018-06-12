@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://peggy3399.github.io">
   <title>git操作 | Peegy&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一次提交本地代码到远程分支 git init git remote add origin https://… .git git pull origin master –allow-unrelated-histories git add . git commit -m ‘解释说明文字’ git push oriign master">
+  <meta name="description" content="第一次提交本地代码到远程分支 git init git remote add origin https://。。。.git git pull origin master –allow-unrelated-histories git add . git commit -m ‘解释说明文字’ git push oriign master   出现的问题fatal: refusing to merge">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git操作">
 <meta property="og:url" content="https://peggy3399.github.io/2017/11/13/git操作/index.html">
 <meta property="og:site_name" content="Peegy&#39;s Blog">
-<meta property="og:description" content="第一次提交本地代码到远程分支 git init git remote add origin https://… .git git pull origin master –allow-unrelated-histories git add . git commit -m ‘解释说明文字’ git push oriign master">
+<meta property="og:description" content="第一次提交本地代码到远程分支 git init git remote add origin https://。。。.git git pull origin master –allow-unrelated-histories git add . git commit -m ‘解释说明文字’ git push oriign master   出现的问题fatal: refusing to merge">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-13T09:54:29.217Z">
+<meta property="og:updated_time" content="2018-06-12T07:09:18.317Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git操作">
-<meta name="twitter:description" content="第一次提交本地代码到远程分支 git init git remote add origin https://… .git git pull origin master –allow-unrelated-histories git add . git commit -m ‘解释说明文字’ git push oriign master">
+<meta name="twitter:description" content="第一次提交本地代码到远程分支 git init git remote add origin https://。。。.git git pull origin master –allow-unrelated-histories git add . git commit -m ‘解释说明文字’ git push oriign master   出现的问题fatal: refusing to merge">
   
     <link rel="alternative" href="/atom.xml" title="Peegy&#39;s Blog" type="application/atom+xml">
   
@@ -180,13 +180,12 @@
       
         <h4 id="第一次提交本地代码到远程分支"><a href="#第一次提交本地代码到远程分支" class="headerlink" title="第一次提交本地代码到远程分支"></a>第一次提交本地代码到远程分支</h4><ul>
 <li>git init</li>
-<li>git remote add origin https://… .git</li>
+<li>git remote add origin <a href="https://。。。.git" target="_blank" rel="external">https://。。。.git</a></li>
 <li>git pull origin master –allow-unrelated-histories</li>
 <li>git add .</li>
 <li>git commit -m ‘解释说明文字’</li>
 <li>git push oriign master</li>
 </ul>
-<a id="more"></a>
 <blockquote>
 <p>出现的问题fatal: refusing to merge unrelated histories<br>解决问题：git pull origin master –allow-unrelated-histories</p>
 </blockquote>
@@ -195,7 +194,20 @@
 <li>git checkout dev</li>
 <li>git add .</li>
 <li>git commit -m ‘解释说明文字’</li>
-<li>git push oriign dev</li>
+<li>git push origin dev</li>
+</ul>
+<blockquote>
+<p>创建并切换分支：git checkout -b mybranch</p>
+</blockquote>
+<h4 id="拉取远程分支到本地"><a href="#拉取远程分支到本地" class="headerlink" title="拉取远程分支到本地"></a>拉取远程分支到本地</h4><ul>
+<li>git branch -r 查看远程分支</li>
+<li>git fetch origin 远程分支名x:本地分支名x(方法1)</li>
+<li>git checkout -b 本地分支名x origin/远程分支名x(方法2)</li>
+</ul>
+<h4 id="更改git仓库地址"><a href="#更改git仓库地址" class="headerlink" title="更改git仓库地址"></a>更改git仓库地址</h4><p>命令行修改</p>
+<ul>
+<li>git remote rm origin</li>
+<li>git remote add origin [url]</li>
 </ul>
 
       
@@ -339,7 +351,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#第一次提交本地代码到远程分支"><span class="toc-number">1.</span> <span class="toc-text">第一次提交本地代码到远程分支</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#创建本地分支提交到远程"><span class="toc-number">2.</span> <span class="toc-text">创建本地分支提交到远程</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#第一次提交本地代码到远程分支"><span class="toc-number">1.</span> <span class="toc-text">第一次提交本地代码到远程分支</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#创建本地分支提交到远程"><span class="toc-number">2.</span> <span class="toc-text">创建本地分支提交到远程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#拉取远程分支到本地"><span class="toc-number">3.</span> <span class="toc-text">拉取远程分支到本地</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#更改git仓库地址"><span class="toc-number">4.</span> <span class="toc-text">更改git仓库地址</span></a></li></ol>
                     </div>
                 </span>
             </div>
