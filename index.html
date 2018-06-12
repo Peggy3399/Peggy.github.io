@@ -22,7 +22,7 @@
     <link rel="alternative" href="/atom.xml" title="Peegy&#39;s Blog" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/img/peggy/favicon.ico">
   
   <link rel="stylesheet" type="text/css" href="/./main.507b3a.css">
   <style type="text/css">
@@ -42,11 +42,11 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: url(/images/avatar/bg_ad_01.jpg)center bottom no-repeat"></div>
+<div class="overlay" style="background: url(/img/peggy/bg.png)center top no-repeat"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="" class="profilepic">
-			<img src="/images/avatar/1.png" class="js-avatar">
+			<img src="/img/peggy/avatar.png" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="">Peggy</a></h1>
@@ -89,24 +89,29 @@
 			</div>
 		</nav>
 		<nav class="header-music">
+			<!-- 网易云音乐 -->
+			<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=228 height=52 src="http://music.163.com/outchain/player?type=0&id=531551518&auto=1&height=32"></iframe> -->
+			<!-- QQ音乐 -->
+			<!-- controls -->
 			<video width="228" height="30" controls autoplay loop>
-				<source src="http://mp3.qqmusic.cc/yq/212379789.mp3" type="">
+				<source src="/img/peggy/When I See Your Eyes.mp3" type="">
+				<!-- <source src="/img/peggy/Melodia.K - Canon.mp3" type=""> -->
 			</video>
 		</nav>
-	</header>		
+	</header>
 </div>
     </div>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: url(/images/avatar/bg_ad_01.jpg)center bottom no-repeat"></div>
+  	<div class="overlay js-overlay" style="background: url(/img/peggy/bg.png)center top no-repeat"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/images/avatar/1.png" class="js-avatar">
+				<img src="/img/peggy/avatar.png" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Peggy</h1>
@@ -160,7 +165,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/28/可惜不是你/">心灵治愈系</a>
+      <a class="article-title" href="/2017/12/28/可惜不是你/">面朝大海，春暖花开</a>
     </h1>
   
 
@@ -173,7 +178,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://github.com/Peggy3399/Peggy3399.github.io/blob/master/images/avatar/timg.png?raw=true" alt=""></p>
+        <!-- ![](https://github.com/Peggy3399/Peggy3399.github.io/blob/master/images/avatar/timg.png?raw=true) -->
+<p><img src="/img/peggy/timg.jpg" alt=""></p>
 <p>是不是有点怀疑人生，是不是有点迷茫，是不是很累了，来一场心灵的旅程放松一下！！！</p>
         
           <a class="article-more-a" href="/2017/12/28/可惜不是你/#more">more >></a>
@@ -235,19 +241,19 @@
 
 
   
-    <article id="post-vue2-0探索之vuex-md" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-vue2-0探索之vuex" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/11/vue2-0探索之vuex-md/">vue2.0探索之vuex.md</a>
+      <a class="article-title" href="/2018/06/11/vue2-0探索之vuex/">vue2.0探索之vuex</a>
     </h1>
   
 
         
-        <a href="/2018/06/11/vue2-0探索之vuex-md/" class="archive-article-date">
+        <a href="/2018/06/11/vue2-0探索之vuex/" class="archive-article-date">
   	<time datetime="2018-06-11T10:25:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-11</time>
 </a>
         
@@ -255,56 +261,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="事出必有因"><a href="#事出必有因" class="headerlink" title="事出必有因"></a>事出必有因</h4><p>随着项目的需求，组件之间的数据交互变得越来越频繁且关系密切，如果这个时候还局限于props和$emit，觉得自己太low了，于是乎，就想要好好的学习一下vuex，之后发现自己用错了它的功能，接下来好好说道说道。</p>
-<h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。（我自己感觉其实就是个管家…）</p>
-<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><h5 id="NPM"><a href="#NPM" class="headerlink" title="NPM"></a>NPM</h5><p>npm install vuex –save</p>
-<h5 id="Yarn"><a href="#Yarn" class="headerlink" title="Yarn"></a>Yarn</h5><p>yarn add vuex</p>
-<p>在vue项目中引用一些公用的库等都写在main.js，但此次不直接写在其中，通过引入写在store.js文件中，main.js中引入store.js（以下代码均为store.js中内容）：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// main.js</span><br><span class="line">import store from &apos;./vuex/store&apos;</span><br><span class="line">Vue.use(store)</span><br><span class="line"></span><br><span class="line">new Vue(&#123;</span><br><span class="line">  store,</span><br><span class="line">  render: h =&gt; h(App)</span><br><span class="line">&#125;).$mount(&apos;#app-box&apos;)</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// store.js</span><br><span class="line">import Vue from &apos;vue&apos;</span><br><span class="line">import Vuex from &apos;vuex&apos;</span><br><span class="line">Vue.use(Vuex)</span><br><span class="line"></span><br><span class="line">// ..</span><br><span class="line"></span><br><span class="line">export default new Vuex.Store(&#123;</span><br><span class="line">  state,</span><br><span class="line">  getters,</span><br><span class="line">  mutations,</span><br><span class="line">  actions</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h4 id="成员介绍"><a href="#成员介绍" class="headerlink" title="成员介绍"></a>成员介绍</h4><h5 id="State"><a href="#State" class="headerlink" title="State"></a>State</h5><p>状态库： Vuex使用的是单一状态树，也就是一个应用仅一个store实例。这个状态库中的数据，在项目任何组件中都可以使用，是全局的状态。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const state = &#123;</span><br><span class="line">    numList: [0, 1, 2, 3, 4, 5]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h5 id="Getter"><a href="#Getter" class="headerlink" title="Getter"></a>Getter</h5><p>获取状态数据：类似于computed计算属性，这个部分通常写一些处理状态数据的代码，比如过滤state中的某个状态数据。<br>第一个参数是state，因为getter会暴露在store中，所以第二个参数getters是可以接受其他模块中的getter</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const getters = &#123;</span><br><span class="line">    filterEvenNum (state) &#123;</span><br><span class="line">        state.numList = state.numList.filter(s =&gt; s % 2 === 0)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h5 id="Mutation"><a href="#Mutation" class="headerlink" title="Mutation"></a>Mutation</h5><p>变化：类似于组件中methods，在vuex中改变store中state的值，只能通过mutation，注意mutation只进行同步操作。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const mutations = &#123;</span><br><span class="line">    increment (state) &#123;</span><br><span class="line">        state.numList.forEach(num =&gt; num++)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>mutation还可以接受传值，这样代码可以改写为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const mutations = &#123;</span><br><span class="line">    increment (state, value = 1) &#123;</span><br><span class="line">        state.numList.forEach(num =&gt; &#123; num += value &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>触发mutation比较特殊，是通过commit：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">store.commit(&apos;increment&apos;, 2)</span><br><span class="line"></span><br><span class="line">//vue页面触发</span><br><span class="line">this.$store.commit(&apos;increment&apos;, 2)</span><br></pre></td></tr></table></figure>
-<p>使用mutation改变状态有需要遵守的规则这里提一个，剩下可以查看<a href="https://vuex.vuejs.org/zh/guide/mutations.html" target="_blank" rel="external">官方文档说明</a>。</p>
-<p>mutation接受的参数过多时，通常使用对象来作为参数接受，平常封装函数我们也经常这么干，所以so easy，mutation改变状态时最好是用新对象来代替旧对象（ES6写法）</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">state.obj = &#123; ...state.obj, newProp: 123 &#125;</span><br></pre></td></tr></table></figure>
-<h5 id="Action"><a href="#Action" class="headerlink" title="Action"></a>Action</h5><p>Action 类似于 mutation，不同在于：</p>
-<ul>
-<li>Action 提交的是 mutation，而不是直接变更状态。</li>
-<li>Action 可以包含任意异步操作。</li>
-</ul>
-<p>Action 函数接受一个与 store 实例具有相同方法和属性的 context 对象，所以可以使用context.commit, context.rootState, context.getters。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">const actions = &#123;</span><br><span class="line">    increment (&#123; commit &#125;, value) &#123;</span><br><span class="line">        setTimeout(function () &#123;</span><br><span class="line">          commit(&apos;increment&apos;, value)</span><br><span class="line">        &#125;, 2000)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>action可以结合ES2015中promise使用：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">const actions = &#123;</span><br><span class="line">    increment (&#123; commit &#125;, value) &#123;</span><br><span class="line">        return new Promise((resolve, reject) =&gt; &#123;</span><br><span class="line">            setTimeout(function () &#123;</span><br><span class="line">              commit(&apos;increment&apos;, value)</span><br><span class="line">              resolve()</span><br><span class="line">            &#125;, 2000)</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>触发action是通过dispatch：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">store.dispatch(&apos;increment&apos;)</span><br><span class="line"></span><br><span class="line">//vue页面触发</span><br><span class="line">this.$store.dispatch(&apos;increment&apos;)</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>mutation和action都可以通过对象风格的方式提交和分发：</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">commit(&#123;</span><br><span class="line">    type：&apos;increment&apos;,</span><br><span class="line">    value： 2</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h5 id="Module"><a href="#Module" class="headerlink" title="Module"></a>Module</h5><p>module主要针对于比较大型的项目，数据比较繁琐都写在一起会不容易维护，可以根据功能等将store模块化，每个模块拥有自己的 state、mutation、action、getter。我们上面的代码就可以将名称store.js换位num.js仅仅作为操作数据的模块。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">const moduleA = &#123;</span><br><span class="line">  state: &#123; ... &#125;,</span><br><span class="line">  mutations: &#123; ... &#125;,</span><br><span class="line">  actions: &#123; ... &#125;,</span><br><span class="line">  getters: &#123; ... &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const moduleB = &#123;</span><br><span class="line">  state: &#123; ... &#125;,</span><br><span class="line">  mutations: &#123; ... &#125;,</span><br><span class="line">  actions: &#123; ... &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const store = new Vuex.Store(&#123;</span><br><span class="line">  modules: &#123;</span><br><span class="line">    a: moduleA,</span><br><span class="line">    b: moduleB</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">store.state.a // -&gt; moduleA 的状态</span><br><span class="line">store.state.b // -&gt; moduleB 的状态</span><br></pre></td></tr></table></figure>
-<h4 id="vue文件中使用方法"><a href="#vue文件中使用方法" class="headerlink" title="vue文件中使用方法"></a>vue文件中使用方法</h4><p>state，getter，mutation，action在vue文件中使用方式均有两种，这里拿state作为例子，其他类似，聪明的你肯定会举一反三：</p>
-<ul>
-<li>通过mapState</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">import &#123; mapState &#125; from &apos;vuex&apos;</span><br><span class="line">export default &#123;</span><br><span class="line">    // ...</span><br><span class="line">    computed: &#123;</span><br><span class="line">        ...maptate(&#123;</span><br><span class="line">            numList: state =&gt; state.numList,</span><br><span class="line">            // numArr在此页面中的新名字，&apos;numList&apos;等同于state =&gt; state.numList</span><br><span class="line">            numArr: &apos;numList&apos;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>如果名字一致，也可以写在数组当中：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mapState([</span><br><span class="line">    &apos;numList&apos;</span><br><span class="line">])</span><br></pre></td></tr></table></figure></p>
-<p>此文件中后续使用this.numList或者this.numArr</p>
-<ul>
-<li>通过$store<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">this.$store.state.numList</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>如果是模块化的store，请看<a href="https://vuex.vuejs.org/zh/guide/modules.html" target="_blank" rel="external">官方说明</a></p>
-<h4 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">├── index.html</span><br><span class="line">├── main.js</span><br><span class="line">├── api</span><br><span class="line">│   └── ... # 抽取出API请求</span><br><span class="line">├── components</span><br><span class="line">│   ├── App.vue</span><br><span class="line">│   └── ...</span><br><span class="line">└── store</span><br><span class="line">    ├── index.js          # 我们组装模块并导出 store 的地方</span><br><span class="line">    ├── actions.js        # 根级别的 action</span><br><span class="line">    ├── mutations.js      # 根级别的 mutation</span><br><span class="line">    └── modules</span><br><span class="line">        ├── cart.js       # 购物车模块</span><br><span class="line">        └── products.js   # 产品模块</span><br></pre></td></tr></table></figure>
-<p>参考文档：<a href="https://vuex.vuejs.org/zh/" target="_blank" rel="external">https://vuex.vuejs.org/zh/</a></p>
-
+        <p>事出必有因，第一次自己这么认真的去构思去写博客，随着项目的需求，组件之间的数据交互变得越来越频繁且关系密切，如果这个时候还局限于props和$emit，觉得自己太low了，于是乎，就想要好好的学习一下vuex，之后发现自己用错了它的功能，接下来好好说道说道。<br>
+        
+          <a class="article-more-a" href="/2018/06/11/vue2-0探索之vuex/#more">more >></a>
+        
       
 
       
@@ -331,7 +291,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/06/11/vue2-0探索之vuex-md/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/06/11/vue2-0探索之vuex/">展开全文 >></a>
         </p>
       
 

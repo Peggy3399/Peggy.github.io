@@ -6,25 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://peggy3399.github.io">
-  <title>vue2.0探索之vuex.md | Peegy&#39;s Blog</title>
+  <title>vue2.0探索之vuex | Peegy&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="事出必有因随着项目的需求，组件之间的数据交互变得越来越频繁且关系密切，如果这个时候还局限于props和$emit，觉得自己太low了，于是乎，就想要好好的学习一下vuex，之后发现自己用错了它的功能，接下来好好说道说道。 介绍Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。（我自己感觉其实就">
+  <meta name="description" content="事出必有因，第一次自己这么认真的去构思去写博客，随着项目的需求，组件之间的数据交互变得越来越频繁且关系密切，如果这个时候还局限于props和$emit，觉得自己太low了，于是乎，就想要好好的学习一下vuex，之后发现自己用错了它的功能，接下来好好说道说道。">
 <meta name="keywords" content="vue,vuex">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue2.0探索之vuex.md">
-<meta property="og:url" content="https://peggy3399.github.io/2018/06/11/vue2-0探索之vuex-md/index.html">
+<meta property="og:title" content="vue2.0探索之vuex">
+<meta property="og:url" content="https://peggy3399.github.io/2018/06/11/vue2-0探索之vuex/index.html">
 <meta property="og:site_name" content="Peegy&#39;s Blog">
-<meta property="og:description" content="事出必有因随着项目的需求，组件之间的数据交互变得越来越频繁且关系密切，如果这个时候还局限于props和$emit，觉得自己太low了，于是乎，就想要好好的学习一下vuex，之后发现自己用错了它的功能，接下来好好说道说道。 介绍Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。（我自己感觉其实就">
+<meta property="og:description" content="事出必有因，第一次自己这么认真的去构思去写博客，随着项目的需求，组件之间的数据交互变得越来越频繁且关系密切，如果这个时候还局限于props和$emit，觉得自己太low了，于是乎，就想要好好的学习一下vuex，之后发现自己用错了它的功能，接下来好好说道说道。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-11T10:27:32.464Z">
+<meta property="og:updated_time" content="2018-06-11T10:33:27.594Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue2.0探索之vuex.md">
-<meta name="twitter:description" content="事出必有因随着项目的需求，组件之间的数据交互变得越来越频繁且关系密切，如果这个时候还局限于props和$emit，觉得自己太low了，于是乎，就想要好好的学习一下vuex，之后发现自己用错了它的功能，接下来好好说道说道。 介绍Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。（我自己感觉其实就">
+<meta name="twitter:title" content="vue2.0探索之vuex">
+<meta name="twitter:description" content="事出必有因，第一次自己这么认真的去构思去写博客，随着项目的需求，组件之间的数据交互变得越来越频繁且关系密切，如果这个时候还局限于props和$emit，觉得自己太low了，于是乎，就想要好好的学习一下vuex，之后发现自己用错了它的功能，接下来好好说道说道。">
   
     <link rel="alternative" href="/atom.xml" title="Peegy&#39;s Blog" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/img/peggy/favicon.ico">
   
   <link rel="stylesheet" type="text/css" href="/./main.507b3a.css">
   <style type="text/css">
@@ -44,11 +44,11 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: url(/images/avatar/bg_ad_01.jpg)center bottom no-repeat"></div>
+<div class="overlay" style="background: url(/img/peggy/bg.png)center top no-repeat"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="" class="profilepic">
-			<img src="/images/avatar/1.png" class="js-avatar">
+			<img src="/img/peggy/avatar.png" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="">Peggy</a></h1>
@@ -91,24 +91,29 @@
 			</div>
 		</nav>
 		<nav class="header-music">
+			<!-- 网易云音乐 -->
+			<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=228 height=52 src="http://music.163.com/outchain/player?type=0&id=531551518&auto=1&height=32"></iframe> -->
+			<!-- QQ音乐 -->
+			<!-- controls -->
 			<video width="228" height="30" controls autoplay loop>
-				<source src="http://mp3.qqmusic.cc/yq/212379789.mp3" type="">
+				<source src="/img/peggy/When I See Your Eyes.mp3" type="">
+				<!-- <source src="/img/peggy/Melodia.K - Canon.mp3" type=""> -->
 			</video>
 		</nav>
-	</header>		
+	</header>
 </div>
     </div>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: url(/images/avatar/bg_ad_01.jpg)center bottom no-repeat"></div>
+  	<div class="overlay js-overlay" style="background: url(/img/peggy/bg.png)center top no-repeat"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/images/avatar/1.png" class="js-avatar">
+				<img src="/img/peggy/avatar.png" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Peggy</h1>
@@ -153,19 +158,19 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-vue2-0探索之vuex-md" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-vue2-0探索之vuex" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      vue2.0探索之vuex.md
+      vue2.0探索之vuex
     </h1>
   
 
         
-        <a href="/2018/06/11/vue2-0探索之vuex-md/" class="archive-article-date">
+        <a href="/2018/06/11/vue2-0探索之vuex/" class="archive-article-date">
   	<time datetime="2018-06-11T10:25:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-11</time>
 </a>
         
@@ -173,7 +178,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="事出必有因"><a href="#事出必有因" class="headerlink" title="事出必有因"></a>事出必有因</h4><p>随着项目的需求，组件之间的数据交互变得越来越频繁且关系密切，如果这个时候还局限于props和$emit，觉得自己太low了，于是乎，就想要好好的学习一下vuex，之后发现自己用错了它的功能，接下来好好说道说道。</p>
+        <p>事出必有因，第一次自己这么认真的去构思去写博客，随着项目的需求，组件之间的数据交互变得越来越频繁且关系密切，如果这个时候还局限于props和$emit，觉得自己太low了，于是乎，就想要好好的学习一下vuex，之后发现自己用错了它的功能，接下来好好说道说道。<br><a id="more"></a></p>
 <h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。它采用集中式存储管理应用的所有组件的状态，并以相应的规则保证状态以一种可预测的方式发生变化。（我自己感觉其实就是个管家…）</p>
 <h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><h5 id="NPM"><a href="#NPM" class="headerlink" title="NPM"></a>NPM</h5><p>npm install vuex –save</p>
 <h5 id="Yarn"><a href="#Yarn" class="headerlink" title="Yarn"></a>Yarn</h5><p>yarn add vuex</p>
@@ -316,7 +321,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://peggy3399.github.io/2018/06/11/vue2-0探索之vuex-md/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://peggy3399.github.io/2018/06/11/vue2-0探索之vuex/" alt="微信分享二维码">
     </div>
 </div>
 

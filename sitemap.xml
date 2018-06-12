@@ -2,9 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://peggy3399.github.io/2018/06/11/vue2-0%E6%8E%A2%E7%B4%A2%E4%B9%8Bvuex-md/</loc>
+    <loc>https://peggy3399.github.io/about/index.html</loc>
     
-    <lastmod>2018-06-11T10:27:32.464Z</lastmod>
+    <lastmod>2018-06-12T04:07:02.153Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://peggy3399.github.io/2017/12/28/%E5%8F%AF%E6%83%9C%E4%B8%8D%E6%98%AF%E4%BD%A0/</loc>
+    
+    <lastmod>2018-06-12T02:27:05.927Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://peggy3399.github.io/2017/12/28/vue-router/</loc>
+    
+    <lastmod>2018-06-12T01:56:59.414Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://peggy3399.github.io/2017/12/28/yarn/</loc>
+    
+    <lastmod>2018-06-12T01:56:15.897Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://peggy3399.github.io/2018/06/11/vue2-0%E6%8E%A2%E7%B4%A2%E4%B9%8Bvuex/</loc>
+    
+    <lastmod>2018-06-11T10:33:27.594Z</lastmod>
     
   </url>
   
@@ -12,20 +40,6 @@
     <loc>https://peggy3399.github.io/2018/01/12/JS%E5%A4%A7%E5%85%A8/</loc>
     
     <lastmod>2018-01-15T02:36:47.376Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://peggy3399.github.io/2017/12/28/%E5%8F%AF%E6%83%9C%E4%B8%8D%E6%98%AF%E4%BD%A0/</loc>
-    
-    <lastmod>2017-12-28T09:51:29.911Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://peggy3399.github.io/2017/12/28/yarn/</loc>
-    
-    <lastmod>2017-12-28T08:51:26.669Z</lastmod>
     
   </url>
   
@@ -54,13 +68,6 @@
     <loc>https://peggy3399.github.io/2017/12/28/webpack/</loc>
     
     <lastmod>2017-12-28T08:24:00.554Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://peggy3399.github.io/2017/12/28/vue-router/</loc>
-    
-    <lastmod>2017-12-28T08:08:48.249Z</lastmod>
     
   </url>
   

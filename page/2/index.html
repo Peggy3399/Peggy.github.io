@@ -22,7 +22,7 @@
     <link rel="alternative" href="/atom.xml" title="Peegy&#39;s Blog" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/img/peggy/favicon.ico">
   
   <link rel="stylesheet" type="text/css" href="/./main.507b3a.css">
   <style type="text/css">
@@ -42,11 +42,11 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: url(/images/avatar/bg_ad_01.jpg)center bottom no-repeat"></div>
+<div class="overlay" style="background: url(/img/peggy/bg.png)center top no-repeat"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="" class="profilepic">
-			<img src="/images/avatar/1.png" class="js-avatar">
+			<img src="/img/peggy/avatar.png" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="">Peggy</a></h1>
@@ -89,24 +89,29 @@
 			</div>
 		</nav>
 		<nav class="header-music">
+			<!-- 网易云音乐 -->
+			<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=228 height=52 src="http://music.163.com/outchain/player?type=0&id=531551518&auto=1&height=32"></iframe> -->
+			<!-- QQ音乐 -->
+			<!-- controls -->
 			<video width="228" height="30" controls autoplay loop>
-				<source src="http://mp3.qqmusic.cc/yq/212379789.mp3" type="">
+				<source src="/img/peggy/When I See Your Eyes.mp3" type="">
+				<!-- <source src="/img/peggy/Melodia.K - Canon.mp3" type=""> -->
 			</video>
 		</nav>
-	</header>		
+	</header>
 </div>
     </div>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: url(/images/avatar/bg_ad_01.jpg)center bottom no-repeat"></div>
+  	<div class="overlay js-overlay" style="background: url(/img/peggy/bg.png)center top no-repeat"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/images/avatar/1.png" class="js-avatar">
+				<img src="/img/peggy/avatar.png" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Peggy</h1>
@@ -179,7 +184,7 @@
     &lt;router-link to=&quot;/foo&quot;&gt;Go to Foo&lt;/router-link&gt;
 &lt;/p&gt;
 &lt;router-view&gt;&lt;/router-view&gt;
-</code></pre><p>我目前了解的主要是webpack + ES2015实现vue。如果要实现路由，文件基本写法就是：</p>
+</code></pre>
         
           <a class="article-more-a" href="/2017/12/28/vue-router/#more">more >></a>
         
@@ -411,7 +416,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/28/yarn/">yarn</a>
+      <a class="article-title" href="/2017/12/28/yarn/">yarn搭建vue脚手架</a>
     </h1>
   
 
@@ -424,31 +429,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<h4 id="yarn-搭建vue脚手架"><a href="#yarn-搭建vue脚手架" class="headerlink" title="yarn 搭建vue脚手架"></a>yarn 搭建vue脚手架</h4><h5 id="安装yarn（Windows）"><a href="#安装yarn（Windows）" class="headerlink" title="安装yarn（Windows）"></a>安装<a href="https://yarnpkg.com/zh-Hans/docs/install" target="_blank" rel="external">yarn</a>（Windows）</h5><p>官网有三种安装方式，这里只说最简单的安装程序安装。<br>安装之前需要安装node.js。</p>
-<p>运行curl -o- -L <a href="https://yarnpkg.com/install.sh" target="_blank" rel="external">https://yarnpkg.com/install.sh</a> | bash命令即可安装或者点击<a href="https://github-production-release-asset-2e65be.s3.amazonaws.com/49970642/3b8d1478-5db4-11e7-8857-b0f901597104?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20170801%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20170801T091331Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=7a540044b7da221b5fe4195d1610043dda2a39eeb10c89ce893a85d4d2192547&amp;X-Amz-SignedHeaders=host&amp;actor_id=21299272&amp;response-content-disposition=attachment%3B%20filename%3Dyarn-0.27.5.msi&amp;response-content-type=application%2Foctet-stream" target="_blank" rel="external">安装</a></p>
-<blockquote>
-<p>查看版本 yarn –version vue –version</p>
-</blockquote>
-<h4 id="简单形式"><a href="#简单形式" class="headerlink" title="简单形式"></a><a href="https://mp.weixin.qq.com/s?__biz=MzA5NTM2MTEzNw%3D%3D&amp;idx=1&amp;mid=2736710892&amp;sn=8a086429d6f91b7248a7f327d33c20ce" target="_blank" rel="external">简单形式</a></h4><ul>
-<li>yarn add global vue-cli</li>
-<li>yarn vue</li>
-<li>vue init webpack-simple my-project</li>
-<li>cd my-project</li>
-<li>yarn </li>
-<li>yarn run dev</li>
-</ul>
-<h4 id="复杂形式"><a href="#复杂形式" class="headerlink" title="复杂形式"></a>复杂形式</h4><ul>
-<li>yarn add global vue-cli</li>
-<li>vue init webpack my-project</li>
-<li>cd my-project</li>
-<li>yarn </li>
-<li>yarn run dev</li>
-</ul>
-<blockquote>
-<p>打开你的浏览器连到<a href="http://localhost:8080/就可以看到运行的界面。" target="_blank" rel="external">http://localhost:8080/就可以看到运行的界面。</a></p>
-</blockquote>
-
+        <h5 id="安装yarn（Windows）"><a href="#安装yarn（Windows）" class="headerlink" title="安装yarn（Windows）"></a>安装<a href="https://yarnpkg.com/zh-Hans/docs/install" target="_blank" rel="external">yarn</a>（Windows）</h5><p>官网有三种安装方式，这里只说最简单的安装程序安装。<br>安装之前需要安装node.js。</p>
+        
+          <a class="article-more-a" href="/2017/12/28/yarn/#more">more >></a>
+        
       
 
       

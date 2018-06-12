@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Peegy&#39;s Blog">
 <meta property="og:description" content="安装：npm install vue-router --save vue路由主要就是通过使用 router-link(默认会被渲染成一个 &amp;lt;a&amp;gt; 标签) 组件来导航，通过传入 to 属性指定链接, 最后渲染在&amp;lt;router-view&amp;gt;中，实现SPA。 &amp;lt;p&amp;gt;     &amp;lt;router-link to=&amp;quot;/foo&amp;quot;&amp;gt;Go to Foo">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-28T08:08:48.249Z">
+<meta property="og:updated_time" content="2018-06-12T01:56:59.414Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue-router">
 <meta name="twitter:description" content="安装：npm install vue-router --save vue路由主要就是通过使用 router-link(默认会被渲染成一个 &amp;lt;a&amp;gt; 标签) 组件来导航，通过传入 to 属性指定链接, 最后渲染在&amp;lt;router-view&amp;gt;中，实现SPA。 &amp;lt;p&amp;gt;     &amp;lt;router-link to=&amp;quot;/foo&amp;quot;&amp;gt;Go to Foo">
@@ -24,7 +24,7 @@
     <link rel="alternative" href="/atom.xml" title="Peegy&#39;s Blog" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/img/peggy/favicon.ico">
   
   <link rel="stylesheet" type="text/css" href="/./main.507b3a.css">
   <style type="text/css">
@@ -44,11 +44,11 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: url(/images/avatar/bg_ad_01.jpg)center bottom no-repeat"></div>
+<div class="overlay" style="background: url(/img/peggy/bg.png)center top no-repeat"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="" class="profilepic">
-			<img src="/images/avatar/1.png" class="js-avatar">
+			<img src="/img/peggy/avatar.png" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="">Peggy</a></h1>
@@ -91,24 +91,29 @@
 			</div>
 		</nav>
 		<nav class="header-music">
+			<!-- 网易云音乐 -->
+			<!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=228 height=52 src="http://music.163.com/outchain/player?type=0&id=531551518&auto=1&height=32"></iframe> -->
+			<!-- QQ音乐 -->
+			<!-- controls -->
 			<video width="228" height="30" controls autoplay loop>
-				<source src="http://mp3.qqmusic.cc/yq/212379789.mp3" type="">
+				<source src="/img/peggy/When I See Your Eyes.mp3" type="">
+				<!-- <source src="/img/peggy/Melodia.K - Canon.mp3" type=""> -->
 			</video>
 		</nav>
-	</header>		
+	</header>
 </div>
     </div>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: url(/images/avatar/bg_ad_01.jpg)center bottom no-repeat"></div>
+  	<div class="overlay js-overlay" style="background: url(/img/peggy/bg.png)center top no-repeat"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/images/avatar/1.png" class="js-avatar">
+				<img src="/img/peggy/avatar.png" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Peggy</h1>
@@ -179,8 +184,8 @@
     &lt;router-link to=&quot;/foo&quot;&gt;Go to Foo&lt;/router-link&gt;
 &lt;/p&gt;
 &lt;router-view&gt;&lt;/router-view&gt;
-</code></pre><p>我目前了解的主要是webpack + ES2015实现vue。如果要实现路由，文件基本写法就是：</p>
-<a id="more"></a>
+</code></pre><a id="more"></a>
+<p>我目前了解的主要是webpack + ES2015实现vue。如果要实现路由，文件基本写法就是：</p>
 <ul>
 <li>调用 Vue.use(VueRouter)</li>
 <li>定义路由组件(import导入需要渲染的组件)</li>
